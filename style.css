@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: rgb(221, 243, 159);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(182, 182, 140);
+}
+
+.logo {
+    display: flex;
+    margin-left: 1vw;
+    align-items: center;
+}
+
+.logo img {
+    height: 10vh;
+    width: 10vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
