@@ -7,6 +7,8 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(182, 182, 140);
+
+    box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
 }
 
 .logo {
@@ -27,4 +29,134 @@ nav ul {
 
 nav ul li {
     margin-right: 10px;
+}
+
+/*Banner-image with relative position and text-align left*/
+.banner-img {
+    position: relative;
+    text-align: left;
+}
+
+/*Banner-text and button with absolute position top and left padding , color , font-size and family*/
+#banner-text,
+#banner-button {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: rgb(182, 182, 140);
+    font-size: 5em;
+    font-family: cursive;
+}
+
+/*css of Banner-button */
+#banner-button {
+    top: 55%;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: rgb(182, 182, 140);
+    border-radius: 10px;
+    border: none;
+    left: 5%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*hover effect on Banner button*/
+#banner-button:hover {
+
+    background-color: rgb(5, 175, 209);
+    transition: .5s;
+}
+
+/*Common css for where_to_go class*/
+.where_to_go {
+    display: flex;
+    background-color: rgb(182, 182, 140);
+    padding: 2.5em;
+}
+
+/*common css for input tag*/
+input {
+
+    border-radius: 5%;
+    margin-left: 5%;
+    font-size: 1.5em;
+    background-color: transparent;
+    border-color: white;
+    border-style: double;
+    color: rgb(253, 253, 246);
+}
+
+/*css for H3 tag which is situatated in where_to_go class */
+.where_to_go h3 {
+    margin-left: 10%;
+    font-size: 35px;
+    color: rgb(253, 253, 246);
+    font-family: cursive;
+}
+
+/*css for where_to_go class button*/
+.where_to_go button {
+    margin-left: 5%;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 5%;
+    font-family: cursive;
+    background-color: rgb(253, 253, 246);
+    color: rgb(182, 182, 140);
+    border-style: double;
+    border-color: rgb(182, 182, 140);
+}
+
+/*hover effect on where_to_go class button*/
+.where_to_go button:hover {
+
+    background-color: rgb(182, 182, 140);
+    color: rgb(253, 253, 246);
+    border-color: rgb(253, 253, 246);
+    transition: .5s;
+}
+
+/* common css for popular_destination class */
+.popular_destination {
+    text-align: center;
+    font-family: cursive;
+}
+
+/* common css for subscribe_mail class */
+.subscribe_mail {
+    display: flex;
+    background-color: rgb(156, 156, 3);
+    padding: 2.5em;
+}
+
+/* css for H3 tag situatated in subscribe_mail class */
+.subscribe_mail h3 {
+    margin-left: 15%;
+    font-size: 35px;
+    color: rgb(253, 253, 246);
+    font-family: cursive;
+}
+
+/* css for subscribe_mail button */
+.subscribe_mail button {
+    margin-left: 2%;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 5%;
+    font-family: cursive;
+    background-color: rgb(182, 182, 140);
+    color: rgb(253, 253, 246);
+    border-style: double;
+    border-color: rgb(182, 182, 140);
+}
+
+/* hover effect on Subscribe_mail button */
+.subscribe_mail button:hover {
+
+    background-color: rgb(253, 253, 246);
+    color: rgb(182, 182, 140);
+    border-color: rgb(253, 253, 246);
+    transition: .5s;
 }
