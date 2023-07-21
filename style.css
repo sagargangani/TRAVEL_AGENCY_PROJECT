@@ -173,7 +173,6 @@ input {
     transition: .5s;
 }
 
-<<<<<<< HEAD
 .destination-image {
     width: 30%;
     position: relative;
@@ -221,7 +220,7 @@ input {
     margin-bottom: 0;
 }
 
-.destination-sub-content  h3 {
+.destination-sub-content h3 {
     margin: 0;
 }
 
@@ -278,8 +277,7 @@ input {
 .travel_variation_area h3 {
     margin: 10px 0;
     line-height: 20px;
-=======
-
+}
 
 .container {
     max-width: 1170px;
@@ -394,5 +392,4 @@ ul {
         text-align: start;
         margin-top: 10px;
     }
->>>>>>> e2b53b7aa0a2bca777736b2db768c254617c2565
 }
