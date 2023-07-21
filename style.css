@@ -306,7 +306,7 @@ ul {
 .footer-col h4 {
     font-size: 18px;
     /* color: #ffffff; */
-    color: #f28130;
+    color: #9c9c04;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -341,7 +341,7 @@ ul {
 
 .footer-col ul li a:hover {
     /* color: #ffffff; */
-    color: #f28130;
+    color: #9c9c04;
     padding-left: 8px;
 }
 
@@ -372,7 +372,7 @@ ul {
     /* color: #24262b; */
     color: #ffffff;
     /* background-color: #ffffff; */
-    background-color: #f28130;
+    background-color: #9c9c04;
 }
 
 /*responsive*/
