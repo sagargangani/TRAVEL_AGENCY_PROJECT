@@ -49,8 +49,7 @@ nav ul li {
 }
 
 /*Banner-text and button with absolute position top and left padding , color , font-size and family*/
-#banner-text,
-#banner-button {
+#banner-text {
     position: absolute;
     top: 20%;
     left: 5%;
@@ -62,8 +61,10 @@ nav ul li {
 /*css of Banner-button */
 #banner-button {
     top: 55%;
+    position: absolute;
     color: white;
     font-size: 1.5em;
+    font-family: cursive;
     padding: 20px;
     background-color: rgb(182, 182, 140);
     border-radius: 10px;
