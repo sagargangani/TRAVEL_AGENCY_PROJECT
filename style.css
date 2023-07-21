@@ -122,6 +122,8 @@ input {
 .popular_destination {
     text-align: center;
     font-family: cursive;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* common css for subscribe_mail class */
@@ -159,4 +161,110 @@ input {
     color: rgb(182, 182, 140);
     border-color: rgb(253, 253, 246);
     transition: .5s;
+}
+
+.destination-image {
+    width: 30%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.destination-images-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.destination-image img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.image-tags {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.destination-name {
+    color: #fff;
+    font-size: 25px;
+}
+
+.destination-tag {
+    background: #9c9c04;
+    color: #fff;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.popular_destination .destination-tag {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.popular_destination .destination-image img {
+    margin-bottom: 0;
+}
+
+.destination-sub-content  h3 {
+    margin: 0;
+}
+
+.destination-sub-content {
+    text-align: left;
+}
+
+.destination-sub-header {
+    color: #666;
+}
+
+.review-stars {
+    float: left;
+    color: orange;
+}
+
+.reviews-span {
+    font-size: 14px;
+}
+
+.duration-span {
+    float: right;
+}
+
+.load-more-btn {
+    line-height: 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #9c9c04;
+    padding: 0 20px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.travel_variation_area {
+    max-width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: cursive;
+}
+
+.travel_containers {
+    max-width: 30%;
+}
+
+.travel_icon {
+    font-size: 45px;
+    color: #9c9c04;
+}
+
+.travel_variation_area h3 {
+    margin: 10px 0;
+    line-height: 20px;
 }
