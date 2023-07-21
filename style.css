@@ -16,9 +16,30 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(182, 182, 140);
-
+    background-color: rgb(156, 156, 3);
     box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
+    height: 13vh;
+}
+
+@media (max-width:480px) {
+    header {
+        display: block;
+        height: 10vh;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-top: 2vh;
+        justify-content: center;
+    }
+
+    nav ul li button {
+        padding: 10px;
+    }
+
 }
 
 .logo {
@@ -35,10 +56,19 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 nav ul li {
     margin-right: 10px;
+}
+
+nav ul li button {
+    background-color: rgb(201, 248, 140);
+    border-radius: 20px;
+    padding: 2vh;
+    cursor: pointer;
 }
 
 /*Banner-image with relative position and text-align left*/
@@ -70,8 +100,8 @@ nav ul li {
     border-radius: 10px;
     border: none;
     left: 5%;
-    cursor: pointer;
-    transition: .5s;
+    /* cursor: pointer;
+    transition: .5s; */
 }
 
 /*hover effect on Banner button*/
@@ -80,6 +110,7 @@ nav ul li {
     background-color: rgb(5, 175, 209);
     transition: .5s;
 }
+
 
 /*Common css for where_to_go class*/
 .where_to_go {
@@ -113,7 +144,7 @@ input[type="date"] {
 /*css for H3 tag which is situatated in where_to_go class */
 .where_to_go h3 {
     margin-left: 10%;
-    font-size: 35px;
+    font-size: 2.5vw;
     color: rgb(253, 253, 246);
     font-family: cursive;
 }
@@ -159,7 +190,7 @@ input[type="date"] {
 /* css for H3 tag situatated in subscribe_mail class */
 .subscribe_mail h3 {
     margin-left: 15%;
-    font-size: 35px;
+    font-size: 2.5vw;
     color: rgb(253, 253, 246);
     font-family: cursive;
 }
@@ -185,6 +216,56 @@ input[type="date"] {
     color: rgb(182, 182, 140);
     border-color: rgb(253, 253, 246);
     transition: .5s;
+}
+
+@media(max-width:480px) {
+
+    #banner-text {
+        font-size: 2em;
+    }
+
+    #banner-button {
+        top: 65%;
+        font-size: 1em;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .where_to_go {
+        display: block;
+    }
+
+    .where_to_go h3 {
+        font-size: 5.5vw;
+        margin: auto;
+        margin-bottom: 1.5vh;
+    }
+
+    .subscribe_mail {
+        display: block;
+        padding: 2em;
+
+    }
+
+    .subscribe_mail h3 {
+        font-size: 5.5vw;
+        margin: auto;
+        margin-bottom: 1.5vh;
+    }
+
+    .where_to_go input,
+    .subscribe_mail input {
+        margin-bottom: 1vh;
+    }
+
+    .subscribe_mail input {
+        padding: 0;
+    }
+
+    .subscribe_mail button {
+        margin-left: 25%;
+        margin-top: 2%;
+    }
 }
 
 .destination-image {
