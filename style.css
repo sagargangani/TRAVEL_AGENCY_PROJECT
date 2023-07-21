@@ -45,6 +45,7 @@ nav ul li {
 .banner-img {
     position: relative;
     text-align: left;
+    margin: 0;
 }
 
 /*Banner-text and button with absolute position top and left padding , color , font-size and family*/
@@ -82,20 +83,31 @@ nav ul li {
 /*Common css for where_to_go class*/
 .where_to_go {
     display: flex;
-    background-color: rgb(182, 182, 140);
+    background-color: rgb(156, 156, 3);
     padding: 2.5em;
 }
 
 /*common css for input tag*/
 input {
 
-    border-radius: 5%;
+    border-radius: 20px;
+
     margin-left: 5%;
     font-size: 1.5em;
     background-color: transparent;
     border-color: white;
-    border-style: double;
+    border-style: groove;
     color: rgb(253, 253, 246);
+}
+
+input[type="date"] {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+::placeholder {
+    color: rgb(253, 253, 246);
+    padding-left: 10px;
 }
 
 /*css for H3 tag which is situatated in where_to_go class */
@@ -108,10 +120,11 @@ input {
 
 /*css for where_to_go class button*/
 .where_to_go button {
-    margin-left: 5%;
+    margin-left: 10px;
+    padding: 10px;
     cursor: pointer;
     font-size: 1.5em;
-    border-radius: 5%;
+    border-radius: 20px;
     font-family: cursive;
     background-color: rgb(253, 253, 246);
     color: rgb(182, 182, 140);
@@ -153,10 +166,11 @@ input {
 
 /* css for subscribe_mail button */
 .subscribe_mail button {
-    margin-left: 2%;
+    margin-left: 20px;
+    padding: 10px;
     cursor: pointer;
     font-size: 1.5em;
-    border-radius: 5%;
+    border-radius: 20px;
     font-family: cursive;
     background-color: rgb(182, 182, 140);
     color: rgb(253, 253, 246);
