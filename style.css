@@ -117,7 +117,7 @@ nav ul li button {
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2.5em;
+    padding: 2.5em 0;
 }
 
 .where_to_go_container {
@@ -149,7 +149,6 @@ input[type="date"] {
 
 /*css for H3 tag which is situatated in where_to_go class */
 .where_to_go h3 {
-    margin-left: 0%;
     font-size: 2.0vw;
     color: rgb(253, 253, 246);
     font-family: cursive;
@@ -196,7 +195,7 @@ input[type="date"] {
 /* css for H3 tag situatated in subscribe_mail class */
 .subscribe_mail h3 {
     margin-left: 15%;
-    font-size: 2.5vw;
+    font-size: 2.0vw;
     color: rgb(253, 253, 246);
     font-family: cursive;
 }
@@ -243,6 +242,7 @@ input[type="date"] {
 
     .where_to_go h3 {
         font-size: 5.5vw;
+        padding-left: 5%;
         margin: auto;
         margin-bottom: 1.5vh;
     }
@@ -255,6 +255,7 @@ input[type="date"] {
 
     .subscribe_mail h3 {
         font-size: 5.5vw;
+        padding-left: 5%;
         margin: auto;
         margin-bottom: 1.5vh;
     }
