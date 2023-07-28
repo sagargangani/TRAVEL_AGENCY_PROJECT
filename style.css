@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(221, 243, 159);
+    background-color: white;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(156, 156, 3);
+    background-color: white;
     box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
     height: 13vh;
 }
@@ -46,11 +46,16 @@ header {
     display: flex;
     margin-left: 1vw;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo img {
     height: 10vh;
     width: 10vw;
+}
+
+.logo img:hover {
+    opacity: 0.6;
 }
 
 nav ul {
@@ -76,10 +81,16 @@ nav ul li a:hover {
 }
 
 nav ul li button {
-    background-color: rgb(201, 248, 140);
+    background-color: #f2f2fe;
     border-radius: 20px;
     padding: 2vh;
     cursor: pointer;
+}
+
+nav ul li button:hover {
+    background-color: rgb(32, 36, 255);
+    color: white;
+    border: white;
 }
 
 /*Banner-image with relative position and text-align left*/
@@ -95,7 +106,7 @@ nav ul li button {
     display: flex;
     top: 20%;
     left: 5%;
-    color: rgb(182, 182, 140);
+    color: rgb(0, 0, 0);
     font-size: 5em;
     font-family: cursive;
     max-width: 1100px;
@@ -107,11 +118,11 @@ nav ul li button {
     top: 55%;
     display: flex;
     position: absolute;
-    color: white;
+    color: black;
     font-size: 1.5em;
     font-family: cursive;
     padding: 20px;
-    background-color: rgb(182, 182, 140);
+    background-color: #f2f2fe;
     border-radius: 10px;
     border: none;
     left: 5%;
@@ -124,7 +135,7 @@ nav ul li button {
 /*hover effect on Banner button*/
 #banner-button:hover {
 
-    background-color: rgb(5, 175, 209);
+    background-color: rgb(32, 36, 255);
     transition: .5s;
 }
 
@@ -135,11 +146,14 @@ nav ul li button {
     max-width: 1100px;
     margin: 0 auto;
     padding: 2.5em 0;
+    color: #000000;
 }
 
 .where_to_go_container {
-    background-color: rgb(156, 156, 3);
+    background-color: #f2f2fe;
+    ;
 }
+
 
 /*common css for input tag*/
 input {
@@ -148,9 +162,9 @@ input {
     margin-left: 5%;
     font-size: 1.5em;
     background-color: transparent;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
     border-style: groove;
-    color: rgb(253, 253, 246);
+    color: #000000;
 }
 
 input[type="date"] {
@@ -159,7 +173,7 @@ input[type="date"] {
 }
 
 ::placeholder {
-    color: rgb(253, 253, 246);
+    /* color: rgb(253, 253, 246); */
     padding-left: 10px;
 }
 
@@ -167,7 +181,8 @@ input[type="date"] {
 .where_to_go h3 {
     font-size: 2.0vw;
     padding-left: 3%;
-    color: rgb(253, 253, 246);
+    /* color: rgb(253, 253, 246); */
+    color: #000000;
     font-family: cursive;
 }
 
@@ -179,8 +194,8 @@ input[type="date"] {
     font-size: 1.5em;
     border-radius: 20px;
     font-family: cursive;
-    background-color: rgb(182, 182, 140);
-    color: rgb(253, 253, 246);
+    background-color: f2f2fe;
+    color: black;
     border-style: double;
     border-color: rgb(182, 182, 140);
 }
@@ -596,6 +611,7 @@ div.recent_trip {
 
 div.gallery {
     border: 1px solid #588406;
+    border-radius: 2vh;
 }
 
 div.gallery:hover {
@@ -605,6 +621,7 @@ div.gallery:hover {
 div.gallery img {
     width: 100%;
     height: auto;
+    border-radius: 2vh;
 }
 
 div.desc {
