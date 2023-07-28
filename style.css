@@ -471,7 +471,7 @@ input[type="date"] {
 
 .travel_icon {
     font-size: 45px;
-    color: #9c9c04;
+    color: rgb(182, 182, 140);
 }
 
 .travel_variation_area h3 {
@@ -507,7 +507,8 @@ body {
 }
 
 .wrapper {
-    background: #cbcb73;
+    background: #f2f2fe;
+    color: #000000;
     height: 400px;
     position: relative;
     overflow: hidden;
@@ -546,7 +547,7 @@ body {
 
 .content h2 {
     font-size: 18px;
-    color: #fff;
+    color: #000;
     font-family: 'comic sans ms', sans-serif;
 }
 
@@ -554,7 +555,7 @@ body {
     font-size: 20px;
     font-family: 'comic sans ms', sans-serif;
     line-height: 1.7;
-    color: #fff;
+    color: #000;
     margin-top: -20px;
     margin-bottom: 20px;
     max-width: 750px;
@@ -571,7 +572,7 @@ body {
     overflow: hidden;
     display: inline-block;
     margin-bottom: 40px;
-    border: 5px solid #fff;
+    border: 2px solid #000;
 }
 
 .dots {
@@ -579,7 +580,7 @@ body {
     height: 12px;
     margin: 15px 10px;
     z-index: 10;
-    outline: 10px solid white;
+    outline: 10px solid #000;
     outline-offset: -6px;
     cursor: pointer;
     appearance: none;
@@ -616,7 +617,7 @@ div.recent_trip {
 }
 
 div.gallery {
-    border: 1px solid #588406;
+    border: 1px solid rgb(182, 182, 140);
     border-radius: 2vh;
 }
 
@@ -668,7 +669,7 @@ div.desc {
 
 
 .footer {
-    background-color: rgb(156, 156, 3);
+    background-color: #f2f2fe;
     padding: 70px 0;
 }
 
@@ -679,7 +680,7 @@ div.desc {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -704,7 +705,7 @@ div.desc {
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: 300;
     display: block;
@@ -722,7 +723,7 @@ div.desc {
 }
 
 .footer-copyright p {
-    color: #ffffff;
+    color: #000000;
     padding-left: 8px;
 }
 
@@ -735,7 +736,7 @@ div.desc {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: #000000;
     transition: all 0.5s ease;
 }
 
