@@ -573,8 +573,11 @@ div.gallery {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
-    text-transform: capitalize;
+    <<<<<<< HEAD
+    /* color: #ffffff; */
+    color: #9c9c04;
+    =======color: #ffffff;
+    >>>>>>>4f569b3962645b191753063732cbc4c7550434c3 text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
     position: relative;
@@ -606,8 +609,11 @@ div.gallery {
 }
 
 .footer-col ul li a:hover {
-    color: #000000;
-    padding-left: 8px;
+    <<<<<<< HEAD
+    /* color: #ffffff; */
+    color: #9c9c04;
+    =======color: #000000;
+    >>>>>>>4f569b3962645b191753063732cbc4c7550434c3 padding-left: 8px;
 }
 
 .footer-copyright {
