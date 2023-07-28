@@ -405,7 +405,7 @@ ul {
 }
 
 .footer {
-    background-color: #24262b;
+    background-color: rgb(156, 156, 3);
     padding: 70px 0;
 }
 
@@ -416,8 +416,7 @@ ul {
 
 .footer-col h4 {
     font-size: 18px;
-    /* color: #ffffff; */
-    color: #f28130;
+    color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -445,14 +444,12 @@ ul {
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    /* color: #ffffff; */
-    color: #f28130;
+    color: #000000;
     padding-left: 8px;
 }
 
@@ -480,10 +477,8 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-    /* color: #24262b; */
     color: #ffffff;
-    /* background-color: #ffffff; */
-    background-color: #f28130;
+    background-color: #000000;
 }
 
 /*responsive*/
