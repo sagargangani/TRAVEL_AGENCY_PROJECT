@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+}
 
 body {
-    margin: 0;
-    background-color: rgb(221, 243, 159);
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background-color: white;
 }
 
 * {
@@ -19,6 +21,26 @@ header {
     background-color: rgb(156, 156, 3);
     box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
     height: 13vh;
+}
+
+@media (max-width:480px) {
+    header {
+        display: block;
+        height: 10vh;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-top: 2vh;
+        justify-content: center;
+    }
+
+    nav ul li button {
+        padding: 10px;
+    }
 
 }
 
@@ -342,21 +364,4 @@ input[type=submit]:hover {
         text-align: start;
         margin-top: 10px;
     }
-
 }
-
-/*
-.container {
-    max-width: 1170px;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.img_cover {
-    margin-bottom: 2vh;
-    =======>>>>>>>1e01485e23294c178560d1180b7c2245a8d58a2a: booking_style.css
-} */
