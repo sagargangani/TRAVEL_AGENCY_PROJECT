@@ -143,17 +143,15 @@ nav ul li button:hover {
 /*Common css for where_to_go class*/
 .where_to_go {
     display: flex;
+    padding: 2.5em;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2.5em 0;
-    color: #000000;
 }
 
-.where_to_go_container {
-    background-color: #f2f2fe;
-    ;
-}
+.where_to_go-container {
+    background-color: rgb(156, 156, 3);
 
+}
 
 /*common css for input tag*/
 input {
@@ -347,7 +345,6 @@ input[type="date"] {
         font-size: 5.5vw;
         padding-left: 5%;
         margin: auto;
-        margin-left: 20%;
         margin-bottom: 1.5vh;
     }
 
@@ -680,7 +677,7 @@ div.desc {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -713,8 +710,11 @@ div.desc {
 }
 
 .footer-col ul li a:hover {
-    color: #000000;
-    padding-left: 8px;
+    <<<<<<< HEAD
+    /* color: #ffffff; */
+    color: #9c9c04;
+    =======color: #000000;
+    >>>>>>>4f569b3962645b191753063732cbc4c7550434c3 padding-left: 8px;
 }
 
 .footer-copyright {
