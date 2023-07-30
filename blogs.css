@@ -157,7 +157,7 @@ header h2 {
 }
 
 .footer {
-    background-color: #24262b;
+    background-color: #f2f2fe;
     padding: 70px 0;
 }
 
@@ -167,9 +167,8 @@ header h2 {
 }
 
 .footer-col h4 {
-    font-size: 18px;
-    /* color: #ffffff; */
-    color: #f28130;
+    font-size: 16px;
+    color: #000000;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -194,17 +193,15 @@ header h2 {
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    /* color: #ffffff; */
-    color: #f28130;
+    color: #000000;
     padding-left: 8px;
 }
 
@@ -214,7 +211,7 @@ header h2 {
 }
 
 .footer-copyright p {
-    color: #ffffff;
+    color: #000000;
     padding-left: 8px;
 }
 
@@ -227,15 +224,13 @@ header h2 {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: #000000;
     transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover {
-    /* color: #24262b; */
     color: #ffffff;
-    /* background-color: #ffffff; */
-    background-color: #f28130;
+    background-color: #000000;
 }
 
 /*responsive*/
