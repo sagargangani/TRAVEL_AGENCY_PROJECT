@@ -385,9 +385,9 @@ header h2 {
     }
 
     .article_content {
-        width: 100%;
+        width: 80%;
+        margin: 3vh 5vw 0 5vw;
         text-align: center;
-        margin-left: 0;
     }
 
 }
