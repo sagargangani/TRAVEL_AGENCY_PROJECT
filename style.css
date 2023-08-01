@@ -1,61 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-body {
-    margin: 0;
-    background-color: white;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
 
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-header {
+body {
+    width: 100%;
+    background-color: white;
+
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.img_cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     background-color: white;
     box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
     height: 13vh;
-}
-
-@media (max-width:480px) {
-    header {
-        display: block;
-        height: 10vh;
-    }
-
-    .logo {
-        justify-content: center;
-    }
-
-    nav ul {
-        margin-top: 2vh;
-        justify-content: center;
-    }
-
-    nav ul li button {
-        padding: 10px;
-    }
-
-}
-
-.logo {
-    display: flex;
-    margin-left: 1vw;
-    align-items: center;
-    cursor: pointer;
-}
-
-.logo img {
-    height: 15vh;
-    width: 15vw;
-}
-
-.logo img:hover {
-    opacity: 0.6;
 }
 
 nav ul {
@@ -74,6 +43,8 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.3vw;
+    font-weight: bold;
+    /* font-family: 'DM Sans', sans-serif; */
 }
 
 nav ul li a:hover {
@@ -87,10 +58,70 @@ nav ul li button {
     cursor: pointer;
 }
 
-nav ul li button:hover {
-    background-color: rgb(32, 36, 255);
-    color: white;
-    border: white;
+@media (max-width:480px) {
+
+    .header {
+        display: block;
+        height: 25vh;
+    }
+
+    .logo a img {
+        height: 14vh;
+        width: 30vw;
+    }
+
+    nav ul li a {
+        font-size: 2vh;
+        margin-right: 2vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        display: block;
+        height: 25vh;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-top: 2vh;
+        justify-content: center;
+    }
+
+    .logo a img {
+        height: 14vh;
+        width: 30vw;
+    }
+
+    .logo a {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 2.5vh;
+        margin-right: 2vw;
+    }
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    margin-left: 1vw;
+    align-items: center;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.logo img {
+    height: 10vh;
+    width: 10vw;
 }
 
 /*Banner-image with relative position and text-align left*/
@@ -108,7 +139,8 @@ nav ul li button:hover {
     left: 5%;
     color: rgb(0, 0, 0);
     font-size: 5em;
-    font-family: cursive;
+    /* font-family: cursive; */
+    /* font-family: 'DM Sans', sans-serif; */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -119,7 +151,8 @@ nav ul li button:hover {
     left: 30%;
     color: rgb(182, 182, 140);
     font-size: 5em;
-    font-family: cursive;
+    /* font-family: cursive;
+    font-family: 'DM Sans', sans-serif; */
 }
 
 /*css of Banner-button */
@@ -129,7 +162,7 @@ nav ul li button:hover {
     position: absolute;
     color: black;
     font-size: 1.5em;
-    font-family: cursive;
+    /* font-family: cursive; */
     padding: 20px;
     background-color: #f2f2fe;
     border-radius: 10px;
@@ -190,7 +223,7 @@ input[type="date"] {
     padding-left: 3%;
     /* color: rgb(253, 253, 246); */
     color: #000000;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 /*css for where_to_go class button*/
@@ -200,8 +233,8 @@ input[type="date"] {
     cursor: pointer;
     font-size: 1.5em;
     border-radius: 20px;
-    font-family: cursive;
-    background-color: f2f2fe;
+    /* font-family: cursive; */
+    background-color: #f2f2fe;
     color: black;
     border-style: double;
     border-color: rgb(182, 182, 140);
@@ -210,8 +243,8 @@ input[type="date"] {
 /*hover effect on where_to_go class button*/
 .where_to_go button:hover {
 
-    background-color: rgb(253, 253, 246);
-    color: rgb(182, 182, 140);
+    background-color: rgb(75, 34, 255);
+    color: white;
     border-color: rgb(253, 253, 246);
     transition: .5s;
 }
@@ -219,7 +252,7 @@ input[type="date"] {
 /* common css for popular_destination class */
 .popular_destination {
     text-align: center;
-    font-family: cursive;
+    /* font-family: cursive; */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -236,7 +269,7 @@ input[type="date"] {
     margin-left: 15%;
     font-size: 2.0vw;
     color: rgb(0, 0, 0);
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 /* css for subscribe_mail button */
@@ -246,7 +279,7 @@ input[type="date"] {
     cursor: pointer;
     font-size: 1.5em;
     border-radius: 20px;
-    font-family: cursive;
+    /* font-family: cursive; */
     background-color: #f2f2fe;
     color: rgb(0, 0, 0);
     border-style: double;
@@ -417,6 +450,16 @@ input[type="date"] {
     padding: 0 10px;
 }
 
+.popular_destination h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.popular_destination p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .popular_destination .destination-tag {
     position: absolute;
     left: 10px;
@@ -474,7 +517,7 @@ input[type="date"] {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 .travel_containers {
@@ -560,12 +603,12 @@ body {
 .content h2 {
     font-size: 18px;
     color: #000;
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
 }
 
 .content p {
     font-size: 20px;
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
     line-height: 1.7;
     color: #000;
     margin-top: -20px;
@@ -622,7 +665,7 @@ body {
 
 /* responsive images for recent trips */
 div.recent_trip {
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
     text-align: center;
     color: black;
     padding-top: 150px;
@@ -646,7 +689,7 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
 }
 
 * {
@@ -825,17 +868,18 @@ div.desc {
 
 
 /* styling for box */
-.info-box{
+.info-box {
     border: 1px solid #90a56b;
     padding: 20px;
-    max-width: 80%;;
-    margin: 0 auto 10px auto; 
+    max-width: 80%;
+    ;
+    margin: 0 auto 10px auto;
     position: relative;
 }
 
 /* styling for button */
-.book-button{
-    display:block;
+.book-button {
+    display: block;
     position: absolute;
     top: 20px;
     right: 10px;
@@ -855,27 +899,27 @@ div.desc {
         margin: 0 auto;
     }
 
-    .book-button{
+    .book-button {
         max-width: 20%;
     }
 }
 
 @media only screen and (max-width: 679px) {
-    .book-button{
+    .book-button {
         max-width: 80%;
         padding: 10px;
         display: block;
         position: relative;
-       
 
-    }  
+
+    }
 }
 
 /* Styling for the content of package */
 .highlight {
     border: 1px solid #90a56b;
-    border-right: 5px solid  #d6d30a;
-    border-left: 5px solid  #d6d30a;
+    border-right: 5px solid #d6d30a;
+    border-left: 5px solid #d6d30a;
     padding: 30px;
     margin: 0 auto;
     background-color: rgb(221, 243, 159);
@@ -909,7 +953,7 @@ div.desc {
 
 /* Styling for headings */
 h2 {
-    color:  #000000;
+    color: #000000;
 }
 
 h3 {
@@ -918,7 +962,8 @@ h3 {
 }
 
 /* Styling for ordered and unordered lists */
-ul, ol {
+ul,
+ol {
     padding-left: 20px;
 }
 
@@ -928,10 +973,10 @@ ul, ol {
         padding: 20px;
     }
 }
-   
 
-  /* Styling for the activity container */
-  .activity-container {
+
+/* Styling for the activity container */
+.activity-container {
     display: flex;
     justify-content: space-around;
     max-width: 90%;
@@ -982,4 +1027,22 @@ ul, ol {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#banner-text {
+    animation: slideInFromLeft 3s ease;
+}
+
+.banner_container {
+    overflow: hidden;
+}
