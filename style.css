@@ -49,7 +49,7 @@ nav ul li a:hover {
 }
 
 nav ul li button {
-    background-color: rgb(201, 248, 140);
+    background-color: #f2f2fe;
     border-radius: 20px;
     padding: 2vh;
     cursor: pointer;
