@@ -1027,3 +1027,21 @@ ol {
     display: table;
     clear: both;
 }
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#banner-text {
+    animation: slideInFromLeft 3s ease;
+}
+
+.banner_container {
+    overflow: hidden;
+}
