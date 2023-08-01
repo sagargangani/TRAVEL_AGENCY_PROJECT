@@ -231,7 +231,7 @@ input[type="date"] {
     font-size: 1.5em;
     border-radius: 20px;
     font-family: cursive;
-    background-color: f2f2fe;
+    background-color: #f2f2fe;
     color: black;
     border-style: double;
     border-color: rgb(182, 182, 140);
@@ -240,8 +240,8 @@ input[type="date"] {
 /*hover effect on where_to_go class button*/
 .where_to_go button:hover {
 
-    background-color: rgb(253, 253, 246);
-    color: rgb(182, 182, 140);
+    background-color: rgb(75, 34, 255);
+    color: white;
     border-color: rgb(253, 253, 246);
     transition: .5s;
 }
