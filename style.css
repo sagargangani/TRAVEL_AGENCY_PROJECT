@@ -7,6 +7,9 @@
 body {
     width: 100%;
     background-color: white;
+
+    font-family: 'DM Sans', sans-serif;
+
 }
 
 .img_cover {
@@ -41,7 +44,7 @@ nav ul li a {
     color: black;
     font-size: 1.3vw;
     font-weight: bold;
-    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'DM Sans', sans-serif; */
 }
 
 nav ul li a:hover {
@@ -136,7 +139,8 @@ nav ul li button {
     left: 5%;
     color: rgb(0, 0, 0);
     font-size: 5em;
-    font-family: cursive;
+    /* font-family: cursive; */
+    /* font-family: 'DM Sans', sans-serif; */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -147,7 +151,8 @@ nav ul li button {
     left: 30%;
     color: rgb(182, 182, 140);
     font-size: 5em;
-    font-family: cursive;
+    /* font-family: cursive;
+    font-family: 'DM Sans', sans-serif; */
 }
 
 /*css of Banner-button */
@@ -157,7 +162,7 @@ nav ul li button {
     position: absolute;
     color: black;
     font-size: 1.5em;
-    font-family: cursive;
+    /* font-family: cursive; */
     padding: 20px;
     background-color: #f2f2fe;
     border-radius: 10px;
@@ -220,7 +225,7 @@ input[type="date"] {
     padding-left: 3%;
     /* color: rgb(253, 253, 246); */
     color: #000000;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 /*css for where_to_go class button*/
@@ -230,7 +235,7 @@ input[type="date"] {
     cursor: pointer;
     font-size: 1.5em;
     border-radius: 20px;
-    font-family: cursive;
+    /* font-family: cursive; */
     background-color: #f2f2fe;
     color: black;
     border-style: double;
@@ -249,7 +254,7 @@ input[type="date"] {
 /* common css for popular_destination class */
 .popular_destination {
     text-align: center;
-    font-family: cursive;
+    /* font-family: cursive; */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -266,7 +271,7 @@ input[type="date"] {
     margin-left: 15%;
     font-size: 2.0vw;
     color: rgb(0, 0, 0);
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 /* css for subscribe_mail button */
@@ -276,7 +281,7 @@ input[type="date"] {
     cursor: pointer;
     font-size: 1.5em;
     border-radius: 20px;
-    font-family: cursive;
+    /* font-family: cursive; */
     background-color: #f2f2fe;
     color: rgb(0, 0, 0);
     border-style: double;
@@ -515,7 +520,7 @@ input[type="date"] {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 .travel_containers {
@@ -601,12 +606,12 @@ body {
 .content h2 {
     font-size: 18px;
     color: #000;
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
 }
 
 .content p {
     font-size: 20px;
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
     line-height: 1.7;
     color: #000;
     margin-top: -20px;
@@ -663,7 +668,7 @@ body {
 
 /* responsive images for recent trips */
 div.recent_trip {
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
     text-align: center;
     color: black;
     padding-top: 150px;
@@ -687,7 +692,7 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-    font-family: 'comic sans ms', sans-serif;
+    /* font-family: 'comic sans ms', sans-serif; */
 }
 
 * {
