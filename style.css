@@ -1,30 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-body {
-    margin: 0;
-    background-color: rgb(221, 243, 159);
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
 
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-header {
+body {
+    width: 100%;
+    background-color: white;
+
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.img_cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(156, 156, 3);
+    background-color: white;
     box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
     height: 13vh;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 2vw;
+}
+
+nav ul li {
+    margin-right: 1vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    font-weight: bold;
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+nav ul li a:hover {
+    color: rgb(76, 76, 255);
+}
+
+nav ul li button {
+    background-color: #f2f2fe;
+    border-radius: 20px;
+    padding: 2vh;
+    cursor: pointer;
+}
+
 @media (max-width:480px) {
-    header {
+
+    .header {
         display: block;
-        height: 10vh;
+        height: 25vh;
+    }
+
+    .logo a img {
+        height: 14vh;
+        width: 30vw;
+    }
+
+    nav ul li a {
+        font-size: 2vh;
+        margin-right: 2vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        display: block;
+        height: 25vh;
     }
 
     .logo {
@@ -36,16 +92,31 @@ header {
         justify-content: center;
     }
 
-    nav ul li button {
-        padding: 10px;
+    .logo a img {
+        height: 14vh;
+        width: 30vw;
     }
 
+    .logo a {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 2.5vh;
+        margin-right: 2vw;
+    }
 }
 
 .logo {
+    cursor: pointer;
     display: flex;
     margin-left: 1vw;
     align-items: center;
+}
+
+.logo:hover {
+    opacity: 0.5;
 }
 
 .logo img {
@@ -53,60 +124,60 @@ header {
     width: 10vw;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-nav ul li {
-    margin-right: 10px;
-}
-
-nav ul li button {
-    background-color: rgb(201, 248, 140);
-    border-radius: 20px;
-    padding: 2vh;
-    cursor: pointer;
-}
-
 /*Banner-image with relative position and text-align left*/
 .banner-img {
     position: relative;
     text-align: left;
-    margin: 0;
+    display: flex;
 }
 
 /*Banner-text and button with absolute position top and left padding , color , font-size and family*/
-#banner-text,
-#banner-button {
+#banner-text {
     position: absolute;
+    display: flex;
     top: 20%;
     left: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 5em;
+    /* font-family: cursive; */
+    /* font-family: 'DM Sans', sans-serif; */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#banner-package {
+    position: absolute;
+    top: 30%;
+    left: 30%;
     color: rgb(182, 182, 140);
     font-size: 5em;
-    font-family: cursive;
+    /* font-family: cursive;
+    font-family: 'DM Sans', sans-serif; */
 }
 
 /*css of Banner-button */
 #banner-button {
     top: 55%;
-    color: white;
+    display: flex;
+    position: absolute;
+    color: black;
     font-size: 1.5em;
+    /* font-family: cursive; */
     padding: 20px;
-    background-color: rgb(182, 182, 140);
+    background-color: #f2f2fe;
     border-radius: 10px;
     border: none;
     left: 5%;
-    /* cursor: pointer;
-    transition: .5s; */
+    max-width: 1100px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .5s;
 }
 
 /*hover effect on Banner button*/
 #banner-button:hover {
 
-    background-color: rgb(5, 175, 209);
+    background-color: rgb(32, 36, 255);
     transition: .5s;
 }
 
@@ -114,21 +185,28 @@ nav ul li button {
 /*Common css for where_to_go class*/
 .where_to_go {
     display: flex;
-    background-color: rgb(156, 156, 3);
-    padding: 2.5em;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5em 0;
+    color: #000000;
 }
+
+.where_to_go_container {
+    background-color: #f2f2fe;
+    ;
+}
+
 
 /*common css for input tag*/
 input {
 
     border-radius: 20px;
-
     margin-left: 5%;
     font-size: 1.5em;
     background-color: transparent;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
     border-style: groove;
-    color: rgb(253, 253, 246);
+    color: #000000;
 }
 
 input[type="date"] {
@@ -137,16 +215,17 @@ input[type="date"] {
 }
 
 ::placeholder {
-    color: rgb(253, 253, 246);
+    /* color: rgb(253, 253, 246); */
     padding-left: 10px;
 }
 
 /*css for H3 tag which is situatated in where_to_go class */
 .where_to_go h3 {
-    margin-left: 10%;
-    font-size: 2.5vw;
-    color: rgb(253, 253, 246);
-    font-family: cursive;
+    font-size: 2.0vw;
+    padding-left: 3%;
+    /* color: rgb(253, 253, 246); */
+    color: #000000;
+    /* font-family: cursive; */
 }
 
 /*css for where_to_go class button*/
@@ -156,9 +235,9 @@ input[type="date"] {
     cursor: pointer;
     font-size: 1.5em;
     border-radius: 20px;
-    font-family: cursive;
-    background-color: rgb(253, 253, 246);
-    color: rgb(182, 182, 140);
+    /* font-family: cursive; */
+    background-color: #f2f2fe;
+    color: black;
     border-style: double;
     border-color: rgb(182, 182, 140);
 }
@@ -166,8 +245,8 @@ input[type="date"] {
 /*hover effect on where_to_go class button*/
 .where_to_go button:hover {
 
-    background-color: rgb(182, 182, 140);
-    color: rgb(253, 253, 246);
+    background-color: rgb(75, 34, 255);
+    color: white;
     border-color: rgb(253, 253, 246);
     transition: .5s;
 }
@@ -175,7 +254,7 @@ input[type="date"] {
 /* common css for popular_destination class */
 .popular_destination {
     text-align: center;
-    font-family: cursive;
+    /* font-family: cursive; */
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -183,16 +262,16 @@ input[type="date"] {
 /* common css for subscribe_mail class */
 .subscribe_mail {
     display: flex;
-    background-color: rgb(156, 156, 3);
+    background-color: #f2f2fe;
     padding: 2.5em;
 }
 
 /* css for H3 tag situatated in subscribe_mail class */
 .subscribe_mail h3 {
     margin-left: 15%;
-    font-size: 2.5vw;
-    color: rgb(253, 253, 246);
-    font-family: cursive;
+    font-size: 2.0vw;
+    color: rgb(0, 0, 0);
+    /* font-family: cursive; */
 }
 
 /* css for subscribe_mail button */
@@ -202,9 +281,9 @@ input[type="date"] {
     cursor: pointer;
     font-size: 1.5em;
     border-radius: 20px;
-    font-family: cursive;
-    background-color: rgb(182, 182, 140);
-    color: rgb(253, 253, 246);
+    /* font-family: cursive; */
+    background-color: #f2f2fe;
+    color: rgb(0, 0, 0);
     border-style: double;
     border-color: rgb(182, 182, 140);
 }
@@ -212,23 +291,29 @@ input[type="date"] {
 /* hover effect on Subscribe_mail button */
 .subscribe_mail button:hover {
 
-    background-color: rgb(253, 253, 246);
-    color: rgb(182, 182, 140);
+    background-color: rgb(75, 34, 255);
+    color: rgb(255, 255, 255);
     border-color: rgb(253, 253, 246);
     transition: .5s;
 }
 
-@media(max-width:480px) {
-
+@media(max-width:768px) {
     #banner-text {
-        font-size: 2em;
+        font-size: 2.7em;
     }
 
     #banner-button {
         top: 65%;
-        font-size: 1em;
+        font-size: 1.5em;
         padding: 15px;
         border-radius: 20px;
+
+    }
+
+    #banner-package {
+        top: 65%;
+        font-size: 1em;
+        padding: 15px;
     }
 
     .where_to_go {
@@ -237,8 +322,14 @@ input[type="date"] {
 
     .where_to_go h3 {
         font-size: 5.5vw;
+        padding-left: 12%;
         margin: auto;
         margin-bottom: 1.5vh;
+    }
+
+    .where_to_go button {
+        margin-left: 5%;
+        margin-top: 2%;
     }
 
     .subscribe_mail {
@@ -249,6 +340,7 @@ input[type="date"] {
 
     .subscribe_mail h3 {
         font-size: 5.5vw;
+        padding-left: 5%;
         margin: auto;
         margin-bottom: 1.5vh;
     }
@@ -256,10 +348,65 @@ input[type="date"] {
     .where_to_go input,
     .subscribe_mail input {
         margin-bottom: 1vh;
+        padding: 15px;
+        flex-wrap: wrap;
     }
 
     .subscribe_mail input {
-        padding: 0;
+        padding: 15px;
+    }
+
+    .subscribe_mail button {
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+}
+
+@media(max-width:480px) {
+
+    #banner-text {
+        font-size: 1.7em;
+    }
+
+    #banner-button {
+        top: 65%;
+        font-size: .7em;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .where_to_go {
+        display: block;
+    }
+
+    .where_to_go h3 {
+        font-size: 5.5vw;
+        padding-left: 5%;
+        margin: auto;
+        margin-bottom: 1.5vh;
+    }
+
+    .subscribe_mail {
+        display: block;
+        padding: 2em;
+    }
+
+    .subscribe_mail h3 {
+        font-size: 5.5vw;
+        padding-left: 5%;
+        margin: auto;
+        margin-left: 20%;
+        margin-bottom: 1.5vh;
+    }
+
+    .where_to_go input,
+    .subscribe_mail input {
+        margin-left: 3%;
+
+    }
+
+    .subscribe_mail input {
+        padding: 15px;
     }
 
     .subscribe_mail button {
@@ -287,22 +434,33 @@ input[type="date"] {
     border-radius: 4px;
 }
 
-.image-tags {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-}
 
 .destination-name {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
     color: #fff;
     font-size: 25px;
 }
 
 .destination-tag {
-    background: #9c9c04;
-    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background: #f2f2fe;
+    color: black;
     border-radius: 12px;
     padding: 0 10px;
+}
+
+.popular_destination h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.popular_destination p {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .popular_destination .destination-tag {
@@ -344,11 +502,16 @@ input[type="date"] {
     line-height: 40px;
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    background: #9c9c04;
+    color: black;
+    background: #f2f2fe;
     padding: 0 20px;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: 2vh;
+}
+
+.load-more-btn:hover {
+    color: white;
+    background: rgb(75, 34, 255);
 }
 
 .travel_variation_area {
@@ -357,7 +520,7 @@ input[type="date"] {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 .travel_containers {
@@ -366,7 +529,7 @@ input[type="date"] {
 
 .travel_icon {
     font-size: 45px;
-    color: #9c9c04;
+    color: rgb(182, 182, 140);
 }
 
 .travel_variation_area h3 {
@@ -388,8 +551,183 @@ ul {
     list-style: none;
 }
 
+/*testimonial slider*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    background: #f2f2fe;
+    color: #000000;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 67px 0 0;
+}
+
+.mainSlider {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 500%;
+    height: auto;
+    transition: left 0.4s;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.content {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex: 1;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.content h2 {
+    font-size: 18px;
+    color: #000;
+    /* font-family: 'comic sans ms', sans-serif; */
+}
+
+.content p {
+    font-size: 20px;
+    /* font-family: 'comic sans ms', sans-serif; */
+    line-height: 1.7;
+    color: #000;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    max-width: 750px;
+}
+
+.img-area img {
+    width: 100%;
+}
+
+.img-area {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 40px;
+    border: 2px solid #000;
+}
+
+.dots {
+    width: 12px;
+    height: 12px;
+    margin: 15px 10px;
+    z-index: 10;
+    outline: 10px solid #000;
+    outline-offset: -6px;
+    cursor: pointer;
+    appearance: none;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.dots:checked:nth-of-type(1)~.mainSlider {
+    left: 0%;
+}
+
+.dots:checked:nth-of-type(2)~.mainSlider {
+    left: -100%;
+}
+
+.dots:checked:nth-of-type(3)~.mainSlider {
+    left: -200%;
+}
+
+.dots:checked:nth-of-type(4)~.mainSlider {
+    left: -300%;
+}
+
+.dots:checked:nth-of-type(5)~.mainSlider {
+    left: -400%;
+}
+
+/* responsive images for recent trips */
+div.recent_trip {
+    /* font-family: 'comic sans ms', sans-serif; */
+    text-align: center;
+    color: black;
+    padding-top: 150px;
+}
+
+div.gallery {
+    border: 1px solid rgb(182, 182, 140);
+    border-radius: 2vh;
+}
+
+div.gallery:hover {
+    border: 1px solid #b5d765;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 2vh;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    /* font-family: 'comic sans ms', sans-serif; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 50px 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 .footer {
-    background-color: rgb(156, 156, 3);
+    background-color: #f2f2fe;
     padding: 70px 0;
 }
 
@@ -400,7 +738,7 @@ ul {
 
 .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -425,7 +763,7 @@ ul {
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-weight: 300;
     display: block;
@@ -443,7 +781,7 @@ ul {
 }
 
 .footer-copyright p {
-    color: #ffffff;
+    color: #000000;
     padding-left: 8px;
 }
 
@@ -456,7 +794,7 @@ ul {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: #000000;
     transition: all 0.5s ease;
 }
 
@@ -674,4 +1012,229 @@ ul {
         margin-left: 0;
         margin-top: 8%;
     }
+}
+
+
+/* Styling for package selection web page */
+
+/* Common styles for the banner */
+.banner-image-package {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Responsive styles for the banner image */
+.banner-image-package img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the banner heading */
+#banner-package {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #ffffff;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    padding: 10px 20px;
+}
+
+/* Responsive styles for the banner heading */
+@media only screen and (max-width: 768px) {
+    #banner-package {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #banner-package {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+}
+
+
+/* styling for box */
+.info-box {
+    border: 1px solid #90a56b;
+    padding: 20px;
+    max-width: 80%;
+    ;
+    margin: 0 auto 10px auto;
+    position: relative;
+}
+
+/* styling for button */
+.book-button {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 40%;
+    padding: 10px;
+    background-color: #4cb7d7;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .box {
+        max-width: 20%;
+        margin: 0 auto;
+    }
+
+    .book-button {
+        max-width: 20%;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .book-button {
+        max-width: 80%;
+        padding: 10px;
+        display: block;
+        position: relative;
+
+
+    }
+}
+
+/* Styling for the content of package */
+.highlight {
+    border: 1px solid #90a56b;
+    border-right: 5px solid #d6d30a;
+    border-left: 5px solid #d6d30a;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: rgb(221, 243, 159);
+    max-width: 80%;
+    position: relative;
+    box-shadow: #d8d8d4;
+}
+
+/* Blue color margins */
+.highlight-content {
+    background-color: rgb(221, 243, 159);
+    margin: 0 2px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .highlight {
+        max-width: 90%;
+    }
+}
+
+
+/* Styling for the 3 day activity */
+.travel-days {
+    font-family: 'Poppins', sans-serif;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Styling for headings */
+h2 {
+    color: #000000;
+}
+
+h3 {
+    color: #009688;
+    margin-top: 20px;
+}
+
+/* Styling for ordered and unordered lists */
+ul,
+ol {
+    padding-left: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .travel-days {
+        padding: 20px;
+    }
+}
+
+
+/* Styling for the activity container */
+.activity-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Styling for each day's activity */
+.day-activity {
+    flex: 1;
+    margin: 10px;
+    max-width: 30%;
+}
+
+/* Styling for the gallery image */
+.gallery-package img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the description */
+.desc-package {
+    text-align: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    color: #444;
+    font-size: 14px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .day-activity {
+        max-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .day-activity {
+        max-width: 90%;
+    }
+}
+
+.clearfix-package:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#banner-text {
+    animation: slideInFromLeft 3s ease;
+}
+
+.banner_container {
+    overflow: hidden;
 }

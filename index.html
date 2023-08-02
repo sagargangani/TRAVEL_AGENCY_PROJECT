@@ -10,42 +10,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="img/logo-no-background.png" alt="Logo here!">
+            <a href="#">
+                <img src="img/b89eb14a3d9143b8b853ac73357b974e (3).png" alt="Logo here!">
+            </a>
         </div>
         <nav>
             <ul>
-                <li><button>Services</button></li>
-                <li><button>Contact</button></li>
-                <li><button>About us</button></li>
+                <li><a href="./packageDetails.html">Packages</a></li>
+                <li><a href="./blogs.html">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
             </ul>
         </nav>
     </header>
     <!--Main section-->
     <main>
         <!--Main background image(banner) of Home page -->
-        <div class="banner-img">
-            <img src="img/banner.jpg" alt="Banner-Image" width="100%" height="100%">
-            <h2 id="banner-text">Discover the World<br> with Us !</h2>
-            <button id="banner-button">Explore Now</button>
+        <div class="banner_container">
+            <div class="banner-img">
+                <img src="img/banner.jpg" alt="Banner-Image" width="100%" height="100%">
+                <h2 id="banner-text">Discover the World<br> with Us !</h2>
+                <button id="banner-button">Explore Now</button>
+            </div>
         </div>
         <!--Where to go section used for Search Destination -->
-        <div class="where_to_go">
-            <h3>Where You Want To Go ?</h3>
-            <input type="text" placeholder="Enter Destination">
-            <input type="date" placeholder="Date">
-            <select id="travel_type" style="display: none;">
-                <option data-display="Travel type">Travel type</option>
-                <option value="1">Some option</option>
-                <option value="2">Another option</option>
-            </select>
-            <button>Search</button>
+        <div class="where_to_go_container">
+            <div class="where_to_go">
+                <h3>Where You Want To Go ?</h3>
+                <input type="text" placeholder="Enter Destination">
+                <input type="date" placeholder="Date">
+                <select id="travel_type" style="display: none;">
+                    <option data-display="Travel type">Travel type</option>
+                    <option value="1">Some option</option>
+                    <option value="2">Another option</option>
+                </select>
+                <button>Search</button>
+            </div>
         </div>
         <!--popular destination in this section some popular places will be shown -->
         <div class="popular_destination">
@@ -64,45 +69,47 @@
                 <div class="destination-image">
                     <img src="./img/destination_2.jpg" alt="Brazil">
                     <div class="image-tags">
-                        <span class="destination-name">Italy</span>
+                        <span class="destination-name">France</span>
                         <span class="destination-tag">07 Places</span>
                     </div>
                 </div>
                 <div class="destination-image">
                     <img src="./img/destination_3.jpg" alt="America">
                     <div class="image-tags">
-                        <span class="destination-name">Italy</span>
+                        <span class="destination-name">Spain</span>
                         <span class="destination-tag">07 Places</span>
                     </div>
                 </div>
                 <div class="destination-image">
                     <img src="./img/destination_4.jpg" alt="Nepal">
                     <div class="image-tags">
-                        <span class="destination-name">Italy</span>
+                        <span class="destination-name">UK</span>
                         <span class="destination-tag">07 Places</span>
                     </div>
                 </div>
                 <div class="destination-image">
                     <img src="./img/destination_5.jpg" alt="Maldives">
                     <div class="image-tags">
-                        <span class="destination-name">Italy</span>
+                        <span class="destination-name">USA</span>
                         <span class="destination-tag">07 Places</span>
                     </div>
                 </div>
                 <div class="destination-image">
                     <img src="./img/destination_6.jpg" alt="India">
                     <div class="image-tags">
-                        <span class="destination-name">Italy</span>
+                        <span class="destination-name">Canada</span>
                         <span class="destination-tag">07 Places</span>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Subscribe mail in which user can subscribe newsletter by providing email-->
-        <div class="subscribe_mail">
-            <h3>Subscribe Our Newsletter</h3>
-            <input type="text" placeholder="Your Mail">
-            <button>Subscribe</button>
+        <div class="subscribe_mail_container">
+            <div class="subscribe_mail">
+                <h3>Subscribe Our Newsletter</h3>
+                <input type="text" placeholder="Your Mail">
+                <button>Subscribe</button>
+            </div>
         </div>
 
         <!--popular destination in this section some popular places will be shown -->
@@ -229,7 +236,7 @@
                     </div>
                 </div>
             </div>
-            <a href="javascript:;" class="load-more-btn">More places</a>
+            <a href="#" class="load-more-btn">More places</a>
         </div>
 
         <div class="travel_variation_area">
@@ -255,22 +262,106 @@
                 <p>A wonderful serenity has taken to the possession of my entire soul.</p>
             </div>
         </div>
+
+        <!-- testimonial slider with personal review from travellers will be displayed-->
+        <div class="wrapper">
+            <input checked="checked" class="dots" name="testi" title="slide1" type="radio"> <input class="dots"
+                name="testi" title="slide2" type="radio"> <input class="dots" name="testi" title="slide3" type="radio">
+            <input class="dots" name="testi" title="slide4" type="radio"> <input class="dots" name="testi"
+                title="slide5" type="radio">
+            <div class="mainSlider">
+                <div class="content">
+                    <div class="img-area"><img alt="testimonial image" src="img/testimonial1.jpg"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nisi, eius. Consequatur, et eum
+                        fuga debitis, incidunt quia!</p>
+                    <h2>Jayti</h2>
+                </div>
+                <div class="content">
+                    <div class="img-area"><img alt="testimonial image" src="img/testimonial2.jpg"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nisi, eius. Consequatur, et eum
+                        fuga debitis, incidunt quia!</p>
+                    <h2>Avan</h2>
+                </div>
+                <div class="content">
+                    <div class="img-area"><img alt="testimonial image" src="img/testimonial3.jpg"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nisi, eius. Consequatur, et eum
+                        fuga debitis, incidunt quia!</p>
+                    <h2>Swati</h2>
+                </div>
+                <div class="content">
+                    <div class="img-area"><img alt="testimonial image" src="img/testimonial4.jpg"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nisi, eius. Consequatur, et eum
+                        fuga debitis, incidunt quia!</p>
+                    <h2>Sagar</h2>
+                </div>
+                <div class="content">
+                    <div class="img-area"><img alt="testimonial image" src="img/testimonial5.jpg"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nisi, eius. Consequatur, et eum
+                        fuga debitis, incidunt quia!</p>
+                    <h2>Het</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Recent Trips content will be displayed-->
+        <div class="recent_trip">
+            <h2> Recent Trips </h2>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img/recent_trip1.jpg">
+                    <img src="img/recent_trip1.jpg" alt="nature">
+                </a>
+                <div class="desc">Beauty trails to be wandered again</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img/recent_trip2.jpg">
+                    <img src="img/recent_trip2.jpg" alt="Forest">
+                </a>
+                <div class="desc">Travellers not tremblers </div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img/recent_trip3.jpg">
+                    <img src="img/recent_trip3.jpg" alt="Bonfires">
+                </a>
+                <div class="desc">Bonfires like fireflies</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="img/recent_trip4.jpg">
+                    <img src="img/recent_trip4.jpg" alt="Mountains">
+                </a>
+                <div class="desc">Clouds meeting the Mountain tops</div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
     </main>
     <!--footer starts here-->
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4>company</h4>
                     <ul>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>To Begin Your Journey</h4>
+                    <h4>Pick Your Trail</h4>
                     <ul>
                         <li><a href="#">Beaches</a></li>
                         <li><a href="#">Bird Watching Sites</a></li>
@@ -283,16 +374,16 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Popular Destination</h4>
+                    <h4>To Begin Your Journey</h4>
                     <ul>
-                        <li><a href="#">Indonesia</a></li>
                         <li><a href="#">India</a></li>
-                        <li><a href="#">Italy</a></li>
+                        <li><a href="#">London</a></li>
+                        <li><a href="#">Dubai</a></li>
+                        <li><a href="#">Spain</a></li>
                         <li><a href="#">France</a></li>
-                        <li><a href="#">America</a></li>
-                        <li><a href="#">Switzerland</a></li>
-                        <li><a href="#">Canada</a></li>
-                        <li><a href="#">United Kingdom</a></li>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Sri Lanka</a></li>
+                        <li><a href="#">Bali</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -301,7 +392,7 @@
                         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <!-- <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> -->
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>

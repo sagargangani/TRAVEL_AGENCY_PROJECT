@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="booking_style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="img/b89eb14a3d9143b8b853ac73357b974e (3).png" alt="Logo here!">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./packageDetails.html">Packages</a></li>
+                <li><a href="./blogs.html">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main section-->
+    <main>
+        <!--Main background image(banner) of Home page -->
+
+        <div class="package_info">
+            <h1 style="text-align: center;">Travel Package Info</h1>
+            <hr>
+            <h3>3-Day Enchanting City Escapes in South Korea</h3>
+            <h3>Day 1: Seoul - Tradition and Modernity</h3>
+            <ul>
+                <li>Morning: Arrival in Seoul, Gyeongbokgung Palace visit.</li>
+                <li>Afternoon: Insadong exploration, traditional Korean lunch.</li>
+                <li>Late Afternoon: Bukchon Hanok Village visit.</li>
+                <li>Evening: Myeongdong shopping and dinner.</li>
+            </ul>
+
+            <h3>Day 2: Busan - Coastal Beauty and Culture</h3>
+            <ul>
+                <li>Morning: Flight to Busan, Gamcheon Culture Village visit.</li>
+                <li>Late Morning: Beomeosa Temple exploration.</li>
+                <li>Afternoon: Haeundae Beach relaxation.</li>
+                <li>Evening: Gwangalli Beach and seafood dinner.</li>
+            </ul>
+
+            <h3>Day 3: Jeju Island - Nature's Wonderland</h3>
+            <ul>
+                <li> <i>Morning:</i> Flight to Jeju Island, Seongsan Ilchulbong hike.</li>
+                <li>Mid-Morning: Manjanggul Cave exploration.</li>
+                <li>Afternoon: Jeju's specialties lunch.</li>
+                <li>Late Afternoon: Cheonjeyeon Waterfall visit.</li>
+                <li>Evening: Return to Seoul, Dongdaemun Market shopping.</li>
+            </ul>
+        </div>
+        <div class="frm_container">
+            <form action="#">
+                <h1>Package Booking Form</h1>
+                <h2 id="traveler_info_heading">Traveler Personal Information</h2>
+                <i class="fa fa-chevron-circle-down" id="down-icon" aria-hidden="true"></i>
+                <div class="row">
+                    <h2>Traveler 1</h2>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="col-25">
+                            <label for="dob">Date Of Birth</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="dob" name="dateofbirth" placeholder="MM-DD-YYYY">
+                        </div>
+                    </div>
+                    <div class="col-50">
+
+                        <div class="col-25">
+                            <label for="ph_number" id="lb_ph_number">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="ph_number" name="phonenumber" placeholder="(000)-000-0000">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="address" placeholder="Your Address Line1..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="address" placeholder="Your Address Line2..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="col-25">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="city" name="city" placeholder="Your City..">
+                        </div>
+                    </div>
+                    <div class="col-50">
+
+                        <div class="col-25">
+                            <label for="state" id="lb_state">State/Province</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="state" name="state" placeholder="Your Province/State..">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-50">
+
+                        <div class="col-25">
+                            <label for="zip_code" id="lb_zip_code">Zip Code</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="zip_code" name="zipcode" placeholder="Your Area Zip Code..">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="row">
+                    <h2>Traveler 2</h2>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="col-25">
+                            <label for="dob">Date Of Birth</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="dob" name="dateofbirth" placeholder="MM-DD-YYYY">
+                        </div>
+                    </div>
+                    <div class="col-50">
+
+                        <div class="col-25">
+                            <label for="ph_number" id="lb_ph_number">Phone Number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="ph_number" name="phonenumber" placeholder="(000)-000-0000">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="address" placeholder="Your Address Line1..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="address" placeholder="Your Address Line2..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="col-25">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="city" name="city" placeholder="Your City..">
+                        </div>
+                    </div>
+                    <div class="col-50">
+
+                        <div class="col-25">
+                            <label for="state" id="lb_state">State/Province</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="state" name="state" placeholder="Your Province/State..">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-50">
+
+                        <div class="col-25">
+                            <label for="zip_code" id="lb_zip_code">Zip Code</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="zip_code" name="zipcode" placeholder="Your Area Zip Code..">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <input type="button" value="Add More Traveler">
+                    </div>
+                    <div class="col-75">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Proceed To Payment">
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <!--footer starts here-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pick Your Trail</h4>
+                    <ul>
+                        <li><a href="#">Beaches</a></li>
+                        <li><a href="#">Bird Watching Sites</a></li>
+                        <li><a href="#">Flora - Fauna</a></li>
+                        <li><a href="#">Heritage Sites</a></li>
+                        <li><a href="#">Religious Sites</a></li>
+                        <li><a href="#">Museums</a></li>
+                        <li><a href="#">Golf Tourism</a></li>
+                        <li><a href="#">Art & Craft</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>To Begin Your Journey</h4>
+                    <ul>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">London</a></li>
+                        <li><a href="#">Dubai</a></li>
+                        <li><a href="#">Spain</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Sri Lanka</a></li>
+                        <li><a href="#">Bali</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--footer copyright-->
+            <div class="footer-copyright">
+                <p>&copy; Copyright 2023. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
