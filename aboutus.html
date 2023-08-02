@@ -4,32 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title of the website-->
     <title>Trail Finders - About Us</title>
+    <!--stylesheet and font import link-->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
 </head>
 
 <body>
-    <header>
+    <!--header of the website-->
+    <header class="header">
         <div class="logo">
-            <img src="img/logo-no-background.png" alt="Logo here!">
+            <a href="./index.html">
+                <img src="img/b89eb14a3d9143b8b853ac73357b974e (3).png" alt="Logo here!">
+            </a>
         </div>
+        <!--navigation of the website-->
         <nav>
             <ul>
-                <li><button>Services</button></li>
-                <li><button>Contact</button></li>
-                <li><button>About us</button></li>
+                <li><a href="./packageDetails.html">Packages</a></li>
+                <li><a href="./blogs.html">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="./aboutus.html">About us</a></li>
             </ul>
         </nav>
     </header>
 
+    <!--main section of the website-->
     <main>
         <section id="about-section-container">
-            <div class="about-desc-container">
+            <div class="about-desc-container" id="about-desc">
+                <!--company's about-us description with images-->
                 <div class="about-container-desc">
                     <h2>Trail Finders</h2>
                     <p class="about">About Us</p>
@@ -53,22 +63,20 @@
                         service beyond reproach, we make that belief a reality.
                     </p>
                 </div>
+                <!--about us image container-->
                 <div class="about-img-container">
                     <div class="about-img">
-                        <!-- <img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_1280.jpg" /> -->
                         <img src="https://tripsupport.ca/wp-content/uploads/2022/08/flight.jpg" />
-                        <!-- <img src="https://cdn.pixabay.com/photo/2018/03/12/20/07/maldives-3220702_1280.jpg"
-                            id="image-about" /> -->
                         <img src="https://tripsupport.ca/wp-content/uploads/2022/08/hotel.jpg" id="image-about" />
                     </div>
                     <diV class="about-description-img-full">
-                        <!-- <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg" /> -->
                         <img src="https://trip-support.s3.amazonaws.com/images/hero/vacation.webp" />
                     </diV>
                 </div>
 
             </div>
-            <div class="about-desc-container">
+            <!--company's mission description with images-->
+            <div class="about-desc-container" id="about-mission">
                 <div class="about-mission-img">
                     <img src="https://tripsupport.ca/wp-content/uploads/2022/08/office.jpg" />
                 </div>
@@ -106,6 +114,7 @@
                 </div>
             </div>
 
+            <!--company's brand description with company logo-->
             <div class="about-brand-container-main">
                 <div class="about-brand-container">
                     <p class="about">Our Brand</p>
@@ -137,7 +146,8 @@
                 </div>
 
                 <div class="about-brand-img">
-                    <img src="img/logo-no-background.png" alt="Logo here!">
+                    <!-- <img src="img/logo-no-background.png" alt="Logo here!"> -->
+                    <img src="img/b89eb14a3d9143b8b853ac73357b974e (3).png" alt="Logo here!">
                 </div>
             </div>
         </section>
@@ -147,48 +157,52 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
+                <!--company information-->
                 <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <h4>company</h4>
+                    <ul class="footer-ordered-list">
+                        <li class="footer-ordered-list"><a href="#">about us</a></li>
+                        <li class="footer-ordered-list"><a href="#">our services</a></li>
+                        <li class="footer-ordered-list"><a href="#">privacy policy</a></li>
+                        <li class="footer-ordered-list"><a href="#">affiliate program</a></li>
                     </ul>
                 </div>
+                <!--company pick yout trail information-->
+                <div class="footer-col">
+                    <h4>Pick Your Trail</h4>
+                    <ul class="footer-ordered-list">
+                        <li class="footer-ordered-list"><a href="#">Beaches</a></li>
+                        <li class="footer-ordered-list"><a href="#">Bird Watching Sites</a></li>
+                        <li class="footer-ordered-list"><a href="#">Flora - Fauna</a></li>
+                        <li class="footer-ordered-list"><a href="#">Heritage Sites</a></li>
+                        <li class="footer-ordered-list"><a href="#">Religious Sites</a></li>
+                        <li class="footer-ordered-list"><a href="#">Museums</a></li>
+                        <li class="footer-ordered-list"><a href="#">Golf Tourism</a></li>
+                        <li class="footer-ordered-list"><a href="#">Art & Craft</a></li>
+                    </ul>
+                </div>
+                <!--journey/tour information-->
                 <div class="footer-col">
                     <h4>To Begin Your Journey</h4>
-                    <ul>
-                        <li><a href="#">Beaches</a></li>
-                        <li><a href="#">Bird Watching Sites</a></li>
-                        <li><a href="#">Flora - Fauna</a></li>
-                        <li><a href="#">Heritage Sites</a></li>
-                        <li><a href="#">Religious Sites</a></li>
-                        <li><a href="#">Museums</a></li>
-                        <li><a href="#">Golf Tourism</a></li>
-                        <li><a href="#">Art & Craft</a></li>
+                    <ul class="footer-ordered-list">
+                        <li class="footer-ordered-list"><a href="#">India</a></li>
+                        <li class="footer-ordered-list"><a href="#">London</a></li>
+                        <li class="footer-ordered-list"><a href="#">Dubai</a></li>
+                        <li class="footer-ordered-list"><a href="#">Spain</a></li>
+                        <li class="footer-ordered-list"><a href="#">France</a></li>
+                        <li class="footer-ordered-list"><a href="#">Maldives</a></li>
+                        <li class="footer-ordered-list"><a href="#">Sri Lanka</a></li>
+                        <li class="footer-ordered-list"><a href="#">Bali</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Popular Destination</h4>
-                    <ul>
-                        <li><a href="#">Indonesia</a></li>
-                        <li><a href="#">India</a></li>
-                        <li><a href="#">Italy</a></li>
-                        <li><a href="#">France</a></li>
-                        <li><a href="#">America</a></li>
-                        <li><a href="#">Switzerland</a></li>
-                        <li><a href="#">Canada</a></li>
-                        <li><a href="#">United Kingdom</a></li>
-                    </ul>
-                </div>
+                <!--social media links-->
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <!-- <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
