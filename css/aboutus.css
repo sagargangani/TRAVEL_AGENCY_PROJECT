@@ -1,0 +1,517 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+}
+
+/* sets width,background-color and font-family*/
+body {
+    width: 100%;
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+/* sets width,height for banner image*/
+.img_cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* sets display,background color and box shadow for header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
+    height: 13vh;
+}
+
+/* styles for un ordered list*/
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 2vw;
+}
+
+/* styles for un ordered list*/
+nav ul li {
+    margin-right: 1vw;
+}
+
+/* styles for un ordered list link*/
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    font-weight: bold;
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+/* styles for un ordered list hover effect*/
+nav ul li a:hover {
+    color: rgb(76, 76, 255);
+}
+
+
+/* styles for un ordered list button*/
+nav ul li button {
+    background-color: #f2f2fe;
+    border-radius: 20px;
+    padding: 2vh;
+    cursor: pointer;
+}
+
+/* responsive styles for mobile*/
+@media (max-width:480px) {
+
+    .header {
+        display: block;
+        height: 25vh;
+    }
+
+    .logo a img {
+        height: 14vh;
+        width: 30vw;
+    }
+
+    nav ul li a {
+        font-size: 2vh;
+        margin-right: 2vw;
+    }
+
+}
+
+/* responsive styles for tablet*/
+@media only screen and (max-width: 768px) {
+    .header {
+        display: block;
+        height: 25vh;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-top: 2vh;
+        justify-content: center;
+    }
+
+    .logo a img {
+        height: 14vh;
+        width: 30vw;
+    }
+
+    .logo a {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 2.5vh;
+        margin-right: 2vw;
+    }
+}
+
+
+/* sets style for logo*/
+.logo {
+    cursor: pointer;
+    display: flex;
+    margin-left: 1vw;
+    align-items: center;
+}
+
+/*styles for logo hover effect*/
+.logo:hover {
+    opacity: 0.5;
+}
+
+/*styles for logo image*/
+.logo img {
+    height: 10vh;
+    width: 10vw;
+}
+
+/*styles for main container*/
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/*styles for row*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*styles for unordered list*/
+ul {
+    list-style: none;
+}
+
+/*testimonial slider*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*styles for html and body which sets height*/
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* footer-container */
+.footer {
+    background-color: #f2f2fe;
+    padding: 70px 0;
+}
+
+/* footer list */
+.footer-ordered-list {
+    padding-left: 0px;
+}
+
+/* footer column with width and padding */
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+/* footer column heading */
+.footer-col h4 {
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* footer column pseudo-element */
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+/* footer column pseudo-element */
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* footer social media links */
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* footer social media links hover effect */
+.footer-col ul li a:hover {
+    color: rgb(76, 76, 255);
+    padding-left: 8px;
+    font-weight: bold;
+}
+
+/* footer copyright text that sets to center */
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* footer copyright text that sets color and padding */
+.footer-copyright p {
+    color: #000000;
+    padding-left: 8px;
+}
+
+/* footer social media links */
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #d1e5f4;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+/* footer social media links hover effect */
+.footer-col .social-links a:hover {
+    color: #ffffff;
+    background-color: rgb(76, 76, 255);
+}
+
+/* sets margin to about us */
+#about-desc {
+    margin-top: 7%;
+}
+
+/* sets display,margin to about description container */
+.about-desc-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* margin-top: 7%;
+    margin-bottom: 5%; */
+}
+
+/* sets display,margin to about brand container */
+.about-brand-container-main {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-bottom: 7%;
+}
+
+/* sets width to about container description*/
+.about-container-desc {
+    width: 60%;
+}
+
+/* sets background,font-size and margin to main heading text of about us*/
+.about-container-desc h2 {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 10.6), rgba(255, 0, 0, 97.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* sets font-size,line height,font-weight and color to about us text */
+.about {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+/* sets font-size,color and font-weight to description */
+.speciality {
+    font-size: 1rem;
+    color: rgb(55, 65, 81);
+    font-weight: 500;
+}
+
+/* sets display and flex-direction to image container */
+.about-img {
+    display: flex;
+    flex-direction: column;
+}
+
+/* sets margin to image about container */
+#image-about {
+    margin-top: 2%;
+}
+
+/* sets width,height,margin and border-radius to about image*/
+.about-img img {
+    max-width: 95%;
+    height: 40%;
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+
+/* sets margin to about image description container*/
+.about-description-img-full {
+    margin-left: 4%;
+}
+
+/* sets width,height,margin and border-radius to about image*/
+.about-description-img-full img {
+    max-width: 100%;
+    height: 85%;
+    border-radius: 5%;
+}
+
+/* sets display ,flex-direction and margin to image container */
+.about-img-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}
+
+/* sets margin to about mission container */
+#about-mission {
+    margin-top: 2%;
+}
+
+/* sets styles for mission image container */
+.about-mission-img {}
+
+
+/* sets width,border-radius and height to about mission image */
+.about-mission-img img {
+    width: 100%;
+    border-radius: 2%;
+    height: 90%;
+}
+
+/* sets width and margin to about mission container */
+.about-mission-container {
+    width: 45%;
+    margin-left: 5%;
+}
+
+/* sets width to about brand container */
+.about-brand-container {
+    width: 65%;
+}
+
+/* sets styles for brand image container */
+.about-brand-img {
+    /* margin-left: 10%; */
+}
+
+/* sets width,border-radius and height to about brand image */
+.about-brand-img img {
+    width: 100%;
+    border-radius: 2%;
+    margin-left: 40%;
+}
+
+/* Responsive styles for tablet */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .about-img-container {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        justify-content: space-between;
+    }
+
+    .about-img img {
+        width: 100%;
+        border-radius: 5%
+    }
+
+    .about-desc-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-brand-container-main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7%;
+        margin-right: 7%;
+    }
+
+    .about-container-desc {
+        width: 100%;
+    }
+
+    .about-description-img-full img {
+        width: 100%;
+    }
+
+    .about-mission-container {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+
+    .about-brand-container {
+        width: 100%;
+    }
+
+    .about-brand-img {
+        margin-left: 0;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .about-brand-img img {
+        width: 60%;
+        border-radius: 2%;
+        margin-left: 0%;
+    }
+}
+
+/* Responsive styles for mobile */
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-copyright {
+        text-align: start;
+        margin-top: 10px;
+    }
+
+    .about-img-container {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        margin-top: 7%;
+        margin-bottom: 2%;
+        justify-content: space-between;
+    }
+
+    .about-img img {
+        width: 100%;
+        border-radius: 5%
+    }
+
+    .about-desc-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .about-brand-container-main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .about-container-desc {
+        width: 100%;
+    }
+
+    .about-description-img-full img {
+        width: 100%;
+    }
+
+    .about-mission-container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+}
