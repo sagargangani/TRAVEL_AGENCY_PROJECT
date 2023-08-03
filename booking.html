@@ -4,18 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <!--title of the website-->
+    <title>Trail Finders - Home</title>
+    <!--favicon-->
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <!--stylesheet and font import link-->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="booking_style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <a href="#">
+            <a href="./index.html">
                 <img src="img/b89eb14a3d9143b8b853ac73357b974e (3).png" alt="Logo here!">
             </a>
         </div>
@@ -24,46 +31,60 @@
                 <li><a href="./packageDetails.html">Packages</a></li>
                 <li><a href="./blogs.html">Blogs</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="./html/aboutus.html">About us</a></li>
             </ul>
         </nav>
     </header>
     <!--Main section-->
-    <main>
+    <main class="booking">
         <!--Main background image(banner) of Home page -->
-
+        <div class="banner-image">
+            <div class="overlay"></div>
+        </div>
         <div class="package_info">
-            <h1 style="text-align: center;">Travel Package Info</h1>
+            <div class="row">
+                <h1 style="text-align: center;">Travel Package Info</h1>
+            </div>
             <hr>
-            <h3>3-Day Enchanting City Escapes in South Korea</h3>
-            <h3>Day 1: Seoul - Tradition and Modernity</h3>
-            <ul>
-                <li>Morning: Arrival in Seoul, Gyeongbokgung Palace visit.</li>
-                <li>Afternoon: Insadong exploration, traditional Korean lunch.</li>
-                <li>Late Afternoon: Bukchon Hanok Village visit.</li>
-                <li>Evening: Myeongdong shopping and dinner.</li>
-            </ul>
+            <div class="row">
+                <div class="col-50">
 
-            <h3>Day 2: Busan - Coastal Beauty and Culture</h3>
-            <ul>
-                <li>Morning: Flight to Busan, Gamcheon Culture Village visit.</li>
-                <li>Late Morning: Beomeosa Temple exploration.</li>
-                <li>Afternoon: Haeundae Beach relaxation.</li>
-                <li>Evening: Gwangalli Beach and seafood dinner.</li>
-            </ul>
+                    <h3>3-Day Enchanting City Escapes in South Korea</h3>
+                    <h3>Day 1: Seoul - Tradition and Modernity</h3>
+                    <ul>
+                        <li>Morning: Arrival in Seoul, Gyeongbokgung Palace visit.</li>
+                        <li>Afternoon: Insadong exploration, traditional Korean lunch.</li>
+                        <li>Late Afternoon: Bukchon Hanok Village visit.</li>
+                        <li>Evening: Myeongdong shopping and dinner.</li>
+                    </ul>
 
-            <h3>Day 3: Jeju Island - Nature's Wonderland</h3>
-            <ul>
-                <li> <i>Morning:</i> Flight to Jeju Island, Seongsan Ilchulbong hike.</li>
-                <li>Mid-Morning: Manjanggul Cave exploration.</li>
-                <li>Afternoon: Jeju's specialties lunch.</li>
-                <li>Late Afternoon: Cheonjeyeon Waterfall visit.</li>
-                <li>Evening: Return to Seoul, Dongdaemun Market shopping.</li>
-            </ul>
+                    <h3>Day 2: Busan - Coastal Beauty and Culture</h3>
+                    <ul>
+                        <li>Morning: Flight to Busan, Gamcheon Culture Village visit.</li>
+                        <li>Late Morning: Beomeosa Temple exploration.</li>
+                        <li>Afternoon: Haeundae Beach relaxation.</li>
+                        <li>Evening: Gwangalli Beach and seafood dinner.</li>
+                    </ul>
+
+                    <h3>Day 3: Jeju Island - Nature's Wonderland</h3>
+                    <ul>
+                        <li> <i>Morning:</i> Flight to Jeju Island, Seongsan Ilchulbong hike.</li>
+                        <li>Mid-Morning: Manjanggul Cave exploration.</li>
+                        <li>Afternoon: Jeju's specialties lunch.</li>
+                        <li>Late Afternoon: Cheonjeyeon Waterfall visit.</li>
+                        <li>Evening: Return to Seoul, Dongdaemun Market shopping.</li>
+                    </ul>
+                </div>
+                <div class="col-50">
+                    <!-- <img src="../TRAVEL_AGENCY_PROJECT/img/gyeongbok-palace-gd5ebeb264_1920.jpg" /> -->
+                </div>
+            </div>
+
         </div>
         <div class="frm_container">
             <form action="#">
                 <h1>Package Booking Form</h1>
+                <hr>
                 <h2 id="traveler_info_heading">Traveler Personal Information</h2>
                 <i class="fa fa-chevron-circle-down" id="down-icon" aria-hidden="true"></i>
                 <div class="row">
@@ -280,14 +301,20 @@
                 <br>
                 <div class="row">
                     <div class="col-25">
-                        <input type="button" value="Add More Traveler">
+                        <button class="add_button"> <i class="fa fa-plus" aria-hidden="true"></i> Add
+                            Traveler </button>
+
                     </div>
                     <div class="col-75">
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <input type="submit" value="Proceed To Payment">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <input type="submit" value="Proceed To Payment">
+                    </div>
+
                 </div>
             </form>
         </div>
@@ -296,49 +323,53 @@
     <!--footer starts here-->
     <footer class="footer">
         <div class="container">
-            <div class="footer_row">
+            <div class="row">
+                <!--company information-->
                 <div class="footer-col">
                     <h4>company</h4>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">our services</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
+                    <ul class="footer-ordered-list">
+                        <li class="footer-ordered-list"><a href="./html/aboutus.html">about us</a></li>
+                        <li class="footer-ordered-list"><a href="#">our services</a></li>
+                        <li class="footer-ordered-list"><a href="#">privacy policy</a></li>
+                        <li class="footer-ordered-list"><a href="#">affiliate program</a></li>
                     </ul>
                 </div>
+                <!--company pick yout trail information-->
                 <div class="footer-col">
                     <h4>Pick Your Trail</h4>
-                    <ul>
-                        <li><a href="#">Beaches</a></li>
-                        <li><a href="#">Bird Watching Sites</a></li>
-                        <li><a href="#">Flora - Fauna</a></li>
-                        <li><a href="#">Heritage Sites</a></li>
-                        <li><a href="#">Religious Sites</a></li>
-                        <li><a href="#">Museums</a></li>
-                        <li><a href="#">Golf Tourism</a></li>
-                        <li><a href="#">Art & Craft</a></li>
+                    <ul class="footer-ordered-list">
+                        <li class="footer-ordered-list"><a href="#">Beaches</a></li>
+                        <li class="footer-ordered-list"><a href="#">Bird Watching Sites</a></li>
+                        <li class="footer-ordered-list"><a href="#">Flora - Fauna</a></li>
+                        <li class="footer-ordered-list"><a href="#">Heritage Sites</a></li>
+                        <li class="footer-ordered-list"><a href="#">Religious Sites</a></li>
+                        <li class="footer-ordered-list"><a href="#">Museums</a></li>
+                        <li class="footer-ordered-list"><a href="#">Golf Tourism</a></li>
+                        <li class="footer-ordered-list"><a href="#">Art & Craft</a></li>
                     </ul>
                 </div>
+                <!--journey/tour information-->
                 <div class="footer-col">
                     <h4>To Begin Your Journey</h4>
-                    <ul>
-                        <li><a href="#">India</a></li>
-                        <li><a href="#">London</a></li>
-                        <li><a href="#">Dubai</a></li>
-                        <li><a href="#">Spain</a></li>
-                        <li><a href="#">France</a></li>
-                        <li><a href="#">Maldives</a></li>
-                        <li><a href="#">Sri Lanka</a></li>
-                        <li><a href="#">Bali</a></li>
+                    <ul class="footer-ordered-list">
+                        <li class="footer-ordered-list"><a href="#">India</a></li>
+                        <li class="footer-ordered-list"><a href="#">London</a></li>
+                        <li class="footer-ordered-list"><a href="#">Dubai</a></li>
+                        <li class="footer-ordered-list"><a href="#">Spain</a></li>
+                        <li class="footer-ordered-list"><a href="#">France</a></li>
+                        <li class="footer-ordered-list"><a href="#">Maldives</a></li>
+                        <li class="footer-ordered-list"><a href="#">Sri Lanka</a></li>
+                        <li class="footer-ordered-list"><a href="#">Bali</a></li>
                     </ul>
                 </div>
+                <!--social media links-->
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>

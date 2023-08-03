@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
 
 * {
     margin: 0;
@@ -7,6 +7,7 @@
 body {
     width: 100%;
     background-color: white;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .img_cover {
@@ -90,15 +91,31 @@ nav ul li button {
 .logo img {
     height: 10vh;
     width: 10vw;
+} */
+.banner-image {
+    position: relative;
+    background-image: url('img/bg2.png');
+    height: 600px;
+    background-position: top;
+    background-size: cover;
 }
 
-main {
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.booking main {
     background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
+
     height: 100%;
     padding-top: 2%;
+
 }
 
 * {
@@ -106,17 +123,52 @@ main {
 
 }
 
-input[type=text],
-input[type=date],
-input[type=email],
-select,
-textarea {
+.col-75 input[type=text],
+.col-75 input[type=date],
+.col-75 input[type=email],
+.col-75 select {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: none;
+    border: 1px solid #e9ecf4;
+    outline: none;
     border-radius: 4px;
     resize: vertical;
+    transition: border-bottom 0.5s ease-in-out;
+
 }
+
+.col-75 input[type=text]:focus,
+.col-75 input[type=email]:focus {
+    border-bottom: 3px solid rgb(76, 76, 255);
+}
+
+.col-75 input[type=text]::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(76, 76, 255);
+    /* Change to your desired border color */
+    transition: width 0.5s ease-in-out;
+}
+
+.col-75 input[type=text]:focus::after {
+    width: 100%;
+}
+
+
+.package_info hr,
+.frm_container form hr {
+    background-color: rgb(76, 76, 255);
+    height: 0.5px;
+    border: none;
+}
+
+
+
 
 #dob,
 #city,
@@ -142,12 +194,12 @@ textarea {
 
 label {
     padding: 12px 12px 12px 0;
-    display: inline-block;
+    display: block;
 }
 
-input[type=submit] {
-    background-color: rgb(206, 206, 199);
-    color: #000;
+.frm_container .row input[type=submit] {
+    background-color: rgb(76, 76, 255);
+    color: #fff;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -157,9 +209,9 @@ input[type=submit] {
     margin-bottom: 2%;
 }
 
-input[type=button] {
-    background-color: rgb(206, 206, 199);
-    color: #000;
+.add_button {
+    background-color: rgb(76, 76, 255);
+    color: #fff;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -167,37 +219,44 @@ input[type=button] {
     float: left;
 }
 
-input[type=submit]:hover {
-    background-color: rgb(182, 182, 140);
+.frm_container .row input[type=submit]:hover,
+.add_button:hover {
+    background-color: #fff;
+    color: rgb(76, 76, 255);
+    border: 2px solid rgb(76, 76, 255);
+    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
 }
 
-.package_info {
+.booking .package_info {
+    margin-top: 3%;
     margin-left: 10%;
     margin-right: 10%;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
     margin-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 3%;
-    background-color: rgb(242, 242, 254, .7);
+    /*  background-color: rgb(242, 242, 254, .7); */
     border-radius: 10px;
     box-sizing: border-box;
-}
 
+}
 
 /* Styling for headings */
-h2 {
-    color: #000000;
+.booking .package_info .row h1 {
+    color: rgb(76, 76, 255);
+    padding: 2%;
+    padding-left: 35%;
 }
 
-h3 {
-    color: #009688;
+.booking .package_info .row .col-50 h3 {
+    color: rgb(76, 76, 255);
     margin-top: 20px;
 }
 
 /* Styling for ordered and unordered lists */
-ul,
-ol {
+.booking .package_info .row .col-50 ul,
+.booking .package_info .row .col-50 ol {
     padding-left: 20px;
 }
 
@@ -210,8 +269,8 @@ ol {
 
 .frm_container form {
     box-sizing: border-box;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    background-color: rgb(242, 242, 254, .7);
+    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+    /* background-color: rgb(242, 242, 254, .7); */
     padding-left: 5%;
     padding-right: 5%;
     border-radius: 1%;
@@ -220,22 +279,32 @@ ol {
 
 .frm_container h1 {
     text-align: center;
+    padding: 2%;
+    color: rgb(76, 76, 255);
 
 }
 
+.frm_container h2 {
+    color: rgb(76, 76, 255);
+}
+
 #traveler_info_heading {
-    background-color: rgb(206, 206, 199);
+    background-color: rgb(76, 76, 255);
+    color: #fff;
     border-radius: 10px;
     padding: 5px;
-    margin: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
 }
 
 #down-icon {
     float: right;
     position: relative;
-    margin-top: -3.25%;
+    margin-top: -4.75%;
     margin-right: 1.5%;
     font-size: 25px;
+    color: #fff;
 }
 
 .col-50 {
@@ -273,6 +342,10 @@ ol {
         margin-top: 0;
     }
 
+    input[type=text] {
+        margin: 1%;
+    }
+
     #dob,
     #city,
     #country,
@@ -282,8 +355,8 @@ ol {
     #state,
     #lb_ph_number,
     #lb_state {
-        width: 100%;
-        margin-left: 0%;
+
+        margin-left: 2%;
         position: relative;
     }
 
@@ -309,7 +382,7 @@ ol {
 
 
 
-
+/* 
 .footer {
     background-color: #f2f2fe;
     padding: 70px 0;
@@ -392,7 +465,7 @@ ol {
     background-color: #000000;
 }
 
-/*responsive*/
+/*responsive
 @media(max-width: 767px) {
     .footer-col {
         width: 50%;
@@ -409,4 +482,4 @@ ol {
         text-align: start;
         margin-top: 10px;
     }
-}
+} */

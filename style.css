@@ -196,7 +196,7 @@ nav ul li button {
 }
 
 /*common css for input tag*/
-input {
+.index_page input {
 
     border-radius: 20px;
     margin-left: 5%;
