@@ -723,25 +723,34 @@ div.desc {
 }
 
 
+/* footer-container */
 .footer {
     background-color: #f2f2fe;
     padding: 70px 0;
 }
 
+/* footer list */
+.footer-ordered-list {
+    padding-left: 0px;
+}
+
+/* footer column with width and padding */
 .footer-col {
     width: 25%;
     padding: 0 15px;
 }
 
+/* footer column heading */
 .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
     text-transform: capitalize;
     margin-bottom: 35px;
-    font-weight: 500;
+    font-weight: bold;
     position: relative;
 }
 
+/* footer column pseudo-element */
 .footer-col h4::before {
     content: '';
     position: absolute;
@@ -753,10 +762,12 @@ div.desc {
     width: 50px;
 }
 
+/* footer column pseudo-element */
 .footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
+/* footer social media links */
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
@@ -767,29 +778,31 @@ div.desc {
     transition: all 0.3s ease;
 }
 
+/* footer social media links hover effect */
 .footer-col ul li a:hover {
-    <<<<<<< HEAD
-    /* color: #ffffff; */
-    color: #9c9c04;
-    =======color: #000000;
-    >>>>>>>4f569b3962645b191753063732cbc4c7550434c3 padding-left: 8px;
+    color: rgb(76, 76, 255);
+    padding-left: 8px;
+    font-weight: bold;
 }
 
+/* footer copyright text that sets to center */
 .footer-copyright {
     text-align: center;
     margin-top: 40px;
 }
 
+/* footer copyright text that sets color and padding */
 .footer-copyright p {
     color: #000000;
     padding-left: 8px;
 }
 
+/* footer social media links */
 .footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #d1e5f4;
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -798,12 +811,14 @@ div.desc {
     transition: all 0.5s ease;
 }
 
+/* footer social media links hover effect */
 .footer-col .social-links a:hover {
     color: #ffffff;
-    background-color: #000000;
+    background-color: rgb(76, 76, 255);
 }
 
-/*responsive*/
+
+/* Responsive styles for tablet */
 @media(max-width: 767px) {
     .footer-col {
         width: 50%;
@@ -811,6 +826,7 @@ div.desc {
     }
 }
 
+/* Responsive styles for mobile */
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
