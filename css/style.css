@@ -143,15 +143,6 @@ nav ul li button {
     margin: 0 auto;
 }
 
-#banner-package {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    color: rgb(182, 182, 140);
-    font-size: 5em;
-    /* font-family: cursive;
-    font-family: 'DM Sans', sans-serif; */
-}
 
 /*css of Banner-button */
 #banner-button {
@@ -196,15 +187,13 @@ nav ul li button {
 
 /*common css for input tag*/
 .index_page input {
-    border-radius: 5px;
-    padding-left: 5px;
-    margin-left: 5%;
-    font-size: 1.25em;
-    background-color: #fff;
-    border: none;
-    border: 2px solid #dbdbdb;
-    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
-    outline: none;
+
+    border-radius: 20px;
+    /* margin-left: 5%; */
+    font-size: 1.5em;
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    border-style: groove;
     color: #000000;
 }
 
@@ -307,13 +296,7 @@ input[type="date"] {
         border-radius: 20px;
 
     }
-
-    #banner-package {
-        top: 65%;
-        font-size: 1em;
-        padding: 15px;
-    }
-
+    
     .where_to_go {
         display: block;
     }
@@ -578,12 +561,12 @@ body {
     align-items: flex-end;
     -webkit-box-pack: center;
     justify-content: center;
-    margin: 67px 0 0;
+    /* margin: 67px 0 0; */
 }
 
 .mainSlider {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     width: 500%;
     height: auto;
@@ -621,6 +604,10 @@ body {
     max-width: 750px;
 }
 
+/* input .dots{
+    margin-left: 6px;
+} */
+
 .img-area img {
     width: 100%;
 }
@@ -638,14 +625,30 @@ body {
 .dots {
     width: 12px;
     height: 12px;
-    margin: 15px 10px;
+    margin: 43px 20px;
     z-index: 10;
-    outline: 10px solid #000;
+    outline: 6px solid #000;
     outline-offset: -6px;
     cursor: pointer;
     appearance: none;
     backface-visibility: hidden;
     border-radius: 50%;
+}
+
+/* responsive style for content*/
+@media only screen and (max-width: 400px){
+    .content p{
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .content h2{
+        font-size: 12px;
+    }
+
+    .mainSlider {
+        top: 50px;
+    }
 }
 
 .dots:checked:nth-of-type(1)~.mainSlider {
@@ -677,12 +680,11 @@ div.recent_trip {
 }
 
 div.gallery {
-    border: 1px solid rgb(182, 182, 140);
     border-radius: 2vh;
 }
 
-div.gallery:hover {
-    border: 1px solid #b5d765;
+.gallery:hover {
+    border: 1px solid rgb(76, 76, 255);
 }
 
 div.gallery img {
@@ -702,20 +704,13 @@ div.desc {
 }
 
 .responsive {
-    padding: 50px 6px;
+    padding: 22px 6px;
     float: left;
-    width: 24.99999%;
+    width: 25%;
 }
 
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
 
-    }
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .responsive {
         width: 100%;
     }
@@ -851,212 +846,6 @@ div.desc {
     }
 }
 
-
-/* Styling for package selection web page */
-
-/* Common styles for the banner */
-.banner-image-package {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-/* Responsive styles for the banner image */
-.banner-image-package img {
-    width: 100%;
-    height: auto;
-}
-
-/* Styling for the banner heading */
-#banner-package {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    color: #ffffff;
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    padding: 10px 20px;
-}
-
-/* Responsive styles for the banner heading */
-@media only screen and (max-width: 768px) {
-    #banner-package {
-        font-size: 20px;
-        padding: 8px 16px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #banner-package {
-        font-size: 18px;
-        padding: 6px 12px;
-    }
-}
-
-
-/* styling for box */
-.info-box {
-    border: 1px solid #90a56b;
-    padding: 20px;
-    max-width: 80%;
-    ;
-    margin: 0 auto 10px auto;
-    position: relative;
-}
-
-/* styling for button */
-.book-button {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 40%;
-    padding: 10px;
-    background-color: #4cb7d7;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-    .box {
-        max-width: 20%;
-        margin: 0 auto;
-    }
-
-    .book-button {
-        max-width: 20%;
-    }
-}
-
-@media only screen and (max-width: 679px) {
-    .book-button {
-        max-width: 80%;
-        padding: 10px;
-        display: block;
-        position: relative;
-
-
-    }
-}
-
-/* Styling for the content of package */
-.highlight {
-    border: 1px solid #90a56b;
-    border-right: 5px solid #d6d30a;
-    border-left: 5px solid #d6d30a;
-    padding: 30px;
-    margin: 0 auto;
-    background-color: rgb(221, 243, 159);
-    max-width: 80%;
-    position: relative;
-    box-shadow: #d8d8d4;
-}
-
-/* Blue color margins */
-.highlight-content {
-    background-color: rgb(221, 243, 159);
-    margin: 0 2px;
-}
-
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-    .highlight {
-        max-width: 90%;
-    }
-}
-
-
-/* Styling for the 3 day activity */
-.travel-days {
-    font-family: 'Poppins', sans-serif;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-}
-
-/* Styling for headings */
-h2 {
-    color: #000000;
-}
-
-h3 {
-    color: rgb(76, 76, 255);
-    margin-top: 20px;
-}
-
-/* Styling for ordered and unordered lists */
-ul,
-ol {
-    padding-left: 20px;
-}
-
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-    .travel-days {
-        padding: 20px;
-    }
-}
-
-
-/* Styling for the activity container */
-.activity-container {
-    display: flex;
-    justify-content: space-around;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-/* Styling for each day's activity */
-.day-activity {
-    flex: 1;
-    margin: 10px;
-    max-width: 30%;
-}
-
-/* Styling for the gallery image */
-.gallery-package img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Styling for the description */
-.desc-package {
-    text-align: center;
-    padding: 5px;
-    background-color: #f2f2f2;
-    color: #444;
-    font-size: 14px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-    .day-activity {
-        max-width: 45%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .day-activity {
-        max-width: 90%;
-    }
-}
-
-.clearfix-package:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 @keyframes slideInFromLeft {
     0% {
