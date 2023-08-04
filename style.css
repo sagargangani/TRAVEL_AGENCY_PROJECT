@@ -210,15 +210,13 @@ input[type="date"] {
     margin-left: 20px;
 }
 
-::placeholder {
-    /* color: rgb(253, 253, 246); */
-    padding-left: 10px;
-}
+
 
 /*css for H3 tag which is situatated in where_to_go class */
 .where_to_go h3 {
     font-size: 2.0vw;
-    padding-left: 3%;
+    padding-left: 2%;
+    margin-top: 1%;
     /* color: rgb(253, 253, 246); */
     color: #000000;
     /* font-family: cursive; */
@@ -266,6 +264,7 @@ input[type="date"] {
 .subscribe_mail h3 {
     margin-left: 15%;
     font-size: 2.0vw;
+    margin-top: 0%;
     color: rgb(0, 0, 0);
     /* font-family: cursive; */
 }

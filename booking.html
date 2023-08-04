@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--title of the website-->
-    <title>Trail Finders - Home</title>
+    <title>Trail Finders - Booking Page</title>
     <!--favicon-->
     <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
     <!--stylesheet and font import link-->
@@ -76,7 +76,7 @@
                     </ul>
                 </div>
                 <div class="col-50">
-                    <!-- <img src="../TRAVEL_AGENCY_PROJECT/img/gyeongbok-palace-gd5ebeb264_1920.jpg" /> -->
+                    <img src="../TRAVEL_AGENCY_PROJECT/img/sk_image.jpg" />
                 </div>
             </div>
 
@@ -95,7 +95,8 @@
                         <label for="fname">First Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+                        <input type="text" id="fname" name="firstname" placeholder="Your First name.." min="3" max="25"
+                            required>
                     </div>
                 </div>
                 <div class="row">
@@ -103,7 +104,8 @@
                         <label for="lname">Last Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last name.." min="5" max="25"
+                            required>
                     </div>
                 </div>
                 <div class="row">
@@ -112,7 +114,7 @@
                             <label for="dob">Date Of Birth</label>
                         </div>
                         <div class="col-75">
-                            <input type="date" id="dob" name="dateofbirth" placeholder="MM-DD-YYYY">
+                            <input type="date" id="dob" name="dateofbirth" placeholder="MM-DD-YYYY" required>
                         </div>
                     </div>
                     <div class="col-50">
@@ -121,7 +123,18 @@
                             <label for="ph_number" id="lb_ph_number">Phone Number</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="ph_number" name="phonenumber" placeholder="(000)-000-0000">
+                            <div class="col-25">
+                                <select id="countrycode" name="countrycode" required>
+                                    <option value="canada">+1(CA)</option>
+                                    <option value="australia">+61(AUS)</option>
+                                    <option value="india">+91(IN)</option>
+                                </select>
+                            </div>
+                            <div class="col-50">
+                                <input type="text" id="ph_number" name="phonenumber" placeholder="(000)-000-0000"
+                                    min="10" max="10" required>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -130,7 +143,7 @@
                         <label for="email">Email</label>
                     </div>
                     <div class="col-75">
-                        <input type="email" id="email" name="email" placeholder="Your email..">
+                        <input type="email" id="email" name="email" placeholder="Your email.." required>
                     </div>
                 </div>
                 <div class="row">
@@ -138,7 +151,7 @@
                         <label for="address">Address</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="address" name="address" placeholder="Your Address Line1..">
+                        <input type="text" id="address" name="address" placeholder="Your Address Line1.." required>
                     </div>
                 </div>
                 <div class="row">
@@ -154,7 +167,7 @@
                             <label for="city">City</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="city" name="city" placeholder="Your City..">
+                            <input type="text" id="city" name="city" placeholder="Your City.." required>
                         </div>
                     </div>
                     <div class="col-50">
@@ -163,7 +176,7 @@
                             <label for="state" id="lb_state">State/Province</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="state" name="state" placeholder="Your Province/State..">
+                            <input type="text" id="state" name="state" placeholder="Your Province/State.." required>
                         </div>
                     </div>
                 </div>
@@ -173,7 +186,7 @@
                             <label for="country">Country</label>
                         </div>
                         <div class="col-75">
-                            <select id="country" name="country">
+                            <select id="country" name="country" required>
                                 <option value="canada">Canada</option>
                                 <option value="australia">Australia</option>
                                 <option value="usa">USA</option>
@@ -186,7 +199,7 @@
                             <label for="zip_code" id="lb_zip_code">Zip Code</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="zip_code" name="zipcode" placeholder="Your Area Zip Code..">
+                            <input type="text" id="zip_code" name="zipcode" placeholder="Your Area Zip Code.." required>
                         </div>
                     </div>
                 </div>
@@ -201,7 +214,7 @@
                         <label for="fname">First Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+                        <input type="text" id="fname" name="firstname" placeholder="Your First name.." required>
                     </div>
                 </div>
                 <div class="row">
@@ -209,7 +222,7 @@
                         <label for="lname">Last Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last name.." required>
                     </div>
                 </div>
                 <div class="row">
@@ -218,7 +231,7 @@
                             <label for="dob">Date Of Birth</label>
                         </div>
                         <div class="col-75">
-                            <input type="date" id="dob" name="dateofbirth" placeholder="MM-DD-YYYY">
+                            <input type="date" id="dob" name="dateofbirth" placeholder="MM-DD-YYYY" required>
                         </div>
                     </div>
                     <div class="col-50">
@@ -227,7 +240,18 @@
                             <label for="ph_number" id="lb_ph_number">Phone Number</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="ph_number" name="phonenumber" placeholder="(000)-000-0000">
+                            <div class="col-25">
+                                <select id="countrycode" name="countrycode" required>
+                                    <option value="canada">+1(CA)</option>
+                                    <option value="australia">+61(AUS)</option>
+                                    <option value="india">+91(IN)</option>
+                                </select>
+                            </div>
+                            <div class="col-50">
+                                <input type="text" id="ph_number" name="phonenumber" placeholder="(000)-000-0000"
+                                    min="10" max="10" required>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -236,7 +260,7 @@
                         <label for="email">Email</label>
                     </div>
                     <div class="col-75">
-                        <input type="email" id="email" name="email" placeholder="Your email..">
+                        <input type="email" id="email" name="email" placeholder="Your email.." required>
                     </div>
                 </div>
                 <div class="row">
@@ -244,7 +268,7 @@
                         <label for="address">Address</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="address" name="address" placeholder="Your Address Line1..">
+                        <input type="text" id="address" name="address" placeholder="Your Address Line1.." required>
                     </div>
                 </div>
                 <div class="row">
@@ -260,7 +284,7 @@
                             <label for="city">City</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="city" name="city" placeholder="Your City..">
+                            <input type="text" id="city" name="city" placeholder="Your City.." required>
                         </div>
                     </div>
                     <div class="col-50">
@@ -269,7 +293,7 @@
                             <label for="state" id="lb_state">State/Province</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="state" name="state" placeholder="Your Province/State..">
+                            <input type="text" id="state" name="state" placeholder="Your Province/State.." required>
                         </div>
                     </div>
                 </div>
@@ -279,7 +303,7 @@
                             <label for="country">Country</label>
                         </div>
                         <div class="col-75">
-                            <select id="country" name="country">
+                            <select id="country" name="country" required>
                                 <option value="canada">Canada</option>
                                 <option value="australia">Australia</option>
                                 <option value="usa">USA</option>
@@ -292,7 +316,7 @@
                             <label for="zip_code" id="lb_zip_code">Zip Code</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="zip_code" name="zipcode" placeholder="Your Area Zip Code..">
+                            <input type="text" id="zip_code" name="zipcode" placeholder="Your Area Zip Code.." required>
                         </div>
                     </div>
                 </div>

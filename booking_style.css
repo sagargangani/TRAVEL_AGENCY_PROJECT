@@ -1,97 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
-
-* {
-    margin: 0;
-}
-
-body {
-    width: 100%;
-    background-color: white;
-    font-family: 'DM Sans', sans-serif;
-}
-
-.img_cover {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    box-shadow: 0 2px 2px -1px rgba(0, 1, 1, 0.619);
-    height: 13vh;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-right: 2vw;
-}
-
-nav ul li {
-    margin-right: 1vw;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3vw;
-    font-weight: bold;
-    font-family: 'DM Sans', sans-serif;
-}
-
-nav ul li a:hover {
-    color: rgb(76, 76, 255);
-}
-
-nav ul li button {
-    background-color: rgb(201, 248, 140);
-    border-radius: 20px;
-    padding: 2vh;
-    cursor: pointer;
-}
-
-@media (max-width:480px) {
-    header {
-        display: block;
-        height: 10vh;
-    }
-
-    .logo {
-        justify-content: center;
-    }
-
-    nav ul {
-        margin-top: 2vh;
-        justify-content: center;
-    }
-
-    nav ul li button {
-        padding: 10px;
-    }
-
-}
-
-.logo {
-    cursor: pointer;
-    display: flex;
-    margin-left: 1vw;
-    align-items: center;
-}
-
-.logo:hover {
-    opacity: 0.5;
-}
-
-.logo img {
-    height: 10vh;
-    width: 10vw;
-} */
 .banner-image {
     position: relative;
     background-image: url('img/bg2.png');
@@ -126,7 +32,8 @@ nav ul li button {
 .col-75 input[type=text],
 .col-75 input[type=date],
 .col-75 input[type=email],
-.col-75 select {
+.col-75 select,
+#countrycode {
     width: 100%;
     padding: 12px;
     border: none;
@@ -177,11 +84,22 @@ nav ul li button {
     margin-left: 33%;
 }
 
-#ph_number,
 #state,
 #zip_code {
     width: 70%;
     margin-left: 30%;
+}
+
+#countrycode {
+    width: 100%;
+    margin-left: 80%;
+    margin-top: -6%;
+}
+
+#ph_number {
+    width: 100%;
+    margin-left: 50%;
+    margin-top: -3%;
 }
 
 #lb_ph_number,
@@ -246,7 +164,6 @@ label {
 .booking .package_info .row h1 {
     color: rgb(76, 76, 255);
     padding: 2%;
-    padding-left: 35%;
 }
 
 .booking .package_info .row .col-50 h3 {
@@ -258,6 +175,14 @@ label {
 .booking .package_info .row .col-50 ul,
 .booking .package_info .row .col-50 ol {
     padding-left: 20px;
+    font-style: italic;
+}
+
+.booking .package_info .row .col-50 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    box-shadow: 0px 5px 30px 0px rgba(69, 78, 95, 0.57);
 }
 
 .frm_container {
@@ -278,7 +203,7 @@ label {
 }
 
 .frm_container h1 {
-    text-align: center;
+
     padding: 2%;
     color: rgb(76, 76, 255);
 
@@ -333,9 +258,10 @@ label {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .col-25,
+    .col-50,
     .col-75,
     input[type=submit] {
         width: 100%;
@@ -347,17 +273,45 @@ label {
     }
 
     #dob,
+    #traveler_info_heading,
+    #ph_number,
+    #countrycode,
     #city,
     #country,
-    #ph_number,
     #zip_code,
-    #lb_zip_code,
+    /* #lb_zip_code, */
     #state,
-    #lb_ph_number,
-    #lb_state {
+    #lb_ph_number {
 
-        margin-left: 2%;
+        margin-left: 0%;
         position: relative;
+        width: 100%;
+    }
+
+    #lb_zip_code,
+    #lb_state {
+        margin-left: -5%;
+        position: relative;
+        width: 100%;
+    }
+
+    #dob {
+        width: 80%;
+        margin-left: 0%;
+    }
+
+    #countrycode {
+        margin-left: -4%;
+        margin-top: 1%;
+        width: 100%;
+    }
+
+    #ph_number {
+        margin-left: -4%;
+        margin-top: 1%;
+        width: 100%;
+        padding-right: 0;
+
     }
 
     #down-icon {
@@ -365,121 +319,3 @@ label {
         margin-right: 2%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.footer {
-    background-color: #f2f2fe;
-    padding: 70px 0;
-}
-
-.footer_row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-col h4 {
-    font-size: 18px;
-    color: #000000;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-}
-
-.footer-col h4::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-}
-
-.footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-    color: #000000;
-    padding-left: 8px;
-}
-
-.footer-copyright {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.footer-copyright p {
-    color: #000000;
-    padding-left: 8px;
-}
-
-.footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #000000;
-    transition: all 0.5s ease;
-}
-
-.footer-col .social-links a:hover {
-    color: #ffffff;
-    background-color: #000000;
-}
-
-/*responsive
-@media(max-width: 767px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 574px) {
-    .footer-col {
-        width: 100%;
-    }
-
-    .footer-copyright {
-        text-align: start;
-        margin-top: 10px;
-    }
-} */
