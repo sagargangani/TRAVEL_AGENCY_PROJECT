@@ -376,7 +376,7 @@ input[type="date"] {
 
     .where_to_go h3 {
         font-size: 5.5vw;
-        padding-left: 5%;
+        padding-left: 7%;
         margin: auto;
         margin-bottom: 1.5vh;
     }
@@ -388,23 +388,25 @@ input[type="date"] {
 
     .subscribe_mail h3 {
         font-size: 5.5vw;
-        padding-left: 5%;
+        padding-left: 6%;
         margin: auto;
         margin-bottom: 1.5vh;
     }
 
     .where_to_go input,
     .subscribe_mail input {
-        margin-left: 3%;
+        max-width: 100%;
 
     }
 
+    .where_to_go input,
     .subscribe_mail input {
-        padding: 15px;
+        padding: 5px;
+        margin-left: 0%;
     }
 
     .subscribe_mail button {
-        margin-left: 25%;
+        margin-left: 0%;
         margin-top: 2%;
     }
 }
