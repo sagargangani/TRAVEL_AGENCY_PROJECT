@@ -1,3 +1,4 @@
+/* Avan Panchal - 895319 */
 /* import font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
 
@@ -398,6 +399,47 @@ body {
     width: 100%;
     border-radius: 2%;
     margin-left: 20%;
+}
+
+
+/* styles for table container which sets margin */
+.table-container {
+    margin-bottom: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+/* styles for table */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 7px 7px;
+}
+
+/* styles for table heading and data */
+th,
+td {
+    text-align: left;
+    padding: 1rem;
+    border-color: #f2f2fe;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2fe;
+}
+
+/* styles for team text container */
+.team-container {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/* styles for team text */
+.team-container p {
+    font-size: 2rem;
+    font-weight: 800;
 }
 
 /* Responsive styles for tablet */
