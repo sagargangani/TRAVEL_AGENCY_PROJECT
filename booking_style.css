@@ -116,10 +116,11 @@ label {
 }
 
 .frm_container .row input[type=submit] {
-    background-color: rgb(76, 76, 255);
-    color: #fff;
+    background-color: #fff;
+    color: rgb(76, 76, 255);
+    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+    border: 1px solid rgb(76, 76, 255);
     padding: 12px 20px;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
@@ -128,10 +129,12 @@ label {
 }
 
 .add_button {
-    background-color: rgb(76, 76, 255);
-    color: #fff;
+
+    background-color: #fff;
+    color: rgb(76, 76, 255);
+    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
     padding: 12px 20px;
-    border: none;
+    border: 1px solid rgb(76, 76, 255);
     border-radius: 4px;
     cursor: pointer;
     float: left;
@@ -139,8 +142,8 @@ label {
 
 .frm_container .row input[type=submit]:hover,
 .add_button:hover {
-    background-color: #fff;
-    color: rgb(76, 76, 255);
+    background-color: rgb(76, 76, 255);
+    color: #fff;
     border: 2px solid rgb(76, 76, 255);
     box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
 }
