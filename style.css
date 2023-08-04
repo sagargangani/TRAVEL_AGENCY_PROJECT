@@ -174,9 +174,9 @@ nav ul li button {
 
 /*hover effect on Banner button*/
 #banner-button:hover {
-
     background-color: rgb(32, 36, 255);
     transition: .5s;
+    color: #ffffff;
 }
 
 
