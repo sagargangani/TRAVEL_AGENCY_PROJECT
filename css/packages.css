@@ -43,7 +43,7 @@
 }
 
 .article header {
-    margin: 5vh;
+    margin: 5vh 5vh 1vh 5vh;
 }
 
 .continue_reading {
@@ -103,6 +103,20 @@ header h2 {
 
 .img_cover {
     margin-bottom: 2vh;
+}
+
+@media screen and (max-width:1350px) {
+    .article_content {
+        margin-top: 0;
+    }
+
+    .article_part {
+        align-items: flex-start;
+    }
+
+    .article_img img {
+        margin-top: 1vh;
+    }
 }
 
 
