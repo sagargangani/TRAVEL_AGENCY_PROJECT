@@ -1,6 +1,6 @@
 .banner-image {
     position: relative;
-    background-image: url('img/bg2.png');
+    background-image: url('../img/bg2.png');
     height: 600px;
     background-position: top;
     background-size: cover;

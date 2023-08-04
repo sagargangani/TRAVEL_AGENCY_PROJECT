@@ -1,6 +1,6 @@
 #contact-page .banner-image {
     position: relative;
-    background-image: url('img/contact_us_banner.jpg');
+    background-image: url('../img/contact_us_banner.jpg');
     height: 400px;
     background-position: center;
     background-size: cover;
@@ -187,8 +187,6 @@
     }
 
     #contact-page .form-label {
-        /* text-align: center;
-        min-width: auto; */
         margin-bottom: 2%;
     }
 }
