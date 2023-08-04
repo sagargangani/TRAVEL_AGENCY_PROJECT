@@ -426,6 +426,20 @@ td {
     border-color: #f2f2fe;
 }
 
+tr:nth-child(even):hover {
+    background-color: rgb(76, 76, 255);
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+tr:nth-child(odd):hover {
+    background-color: rgb(76, 76, 255);
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 tr:nth-child(even) {
     background-color: #f2f2fe;
 }
