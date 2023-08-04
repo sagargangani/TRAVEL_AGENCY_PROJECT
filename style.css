@@ -7,9 +7,7 @@
 body {
     width: 100%;
     background-color: white;
-
     font-family: 'DM Sans', sans-serif;
-
 }
 
 .img_cover {
@@ -185,20 +183,18 @@ nav ul li button {
 /*Common css for where_to_go class*/
 .where_to_go {
     display: flex;
+    padding: 2.5em;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2.5em 0;
-    color: #000000;
 }
 
-.where_to_go_container {
-    background-color: #f2f2fe;
-    ;
-}
+.where_to_go-container {
+    background-color: rgb(156, 156, 3);
 
+}
 
 /*common css for input tag*/
-input {
+.index_page input {
 
     border-radius: 20px;
     margin-left: 5%;
@@ -395,7 +391,6 @@ input[type="date"] {
         font-size: 5.5vw;
         padding-left: 5%;
         margin: auto;
-        margin-left: 20%;
         margin-bottom: 1.5vh;
     }
 
@@ -427,6 +422,7 @@ input[type="date"] {
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 
 .destination-image img {
     max-width: 100%;
@@ -529,7 +525,8 @@ input[type="date"] {
 
 .travel_icon {
     font-size: 45px;
-    color: rgb(182, 182, 140);
+    color: rgb(127 123 123);
+
 }
 
 .travel_variation_area h3 {
@@ -716,6 +713,14 @@ div.desc {
 @media only screen and (max-width: 480px) {
     .responsive {
         width: 100%;
+    }
+
+    .destination-images-wrapper {
+        justify-content: center;
+    }
+
+    .destination-image {
+        width: 70%;
     }
 }
 
@@ -976,7 +981,7 @@ h2 {
 }
 
 h3 {
-    color: #009688;
+    color: rgb(76, 76, 255);
     margin-top: 20px;
 }
 
