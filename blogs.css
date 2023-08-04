@@ -124,11 +124,11 @@ nav ul li button {
 }
 
 .continue_reading a:hover {
-    color: blue;
+    color: black;
 }
 
 .continue_reading a {
-    color: rgb(12, 12, 12);
+    color: blue;
     text-decoration: none;
 }
 
