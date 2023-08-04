@@ -1,0 +1,227 @@
+/* Styling for package selection web page */
+
+/* Common styles for the banner */
+.banner-image-package {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    max-width: 100%;
+    background-image: url('../img/sk_image.jpg');
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+/* Responsive styles for the banner image */
+.banner-image-package img {
+    height: auto;
+}
+
+/* Styling for the banner heading */
+#banner-package {
+    color: rgb(76, 76, 255);
+    margin: 20px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* styling for box */
+.info-box {
+    padding: 20px 20px;
+    max-width: 80%;
+    margin: 40px auto 20px auto;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+}
+
+/* styling for button */
+.book-button {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgb(76, 76, 255);
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(76, 76, 255);
+    border: 2px solid rgb(76, 76, 255);
+    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0);
+}
+
+.book-button:hover {
+    background-color: rgb(76, 76, 255);
+    color: #fff;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .box {
+        max-width: 20%;
+        margin: 0 auto;
+    }
+
+    .book-button {
+        max-width: 20%;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .book-button {
+        max-width: 95%;
+        top:10px;
+        right:10px;
+        padding: 10px;
+        display: block;
+        position: relative;
+
+
+    }
+}
+
+/* Styling for the content of package */
+.highlight {
+    border: 1px solid #082142;
+    border-right: 5px solid #4c4cff;
+    border-left: 5px solid #4c4cff;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    max-width: 80%;
+    position: relative;
+    box-shadow: #d8d8d4;
+}
+
+/* Blue color margins */
+.highlight-content {
+    background-color: #fbfbfb;
+    margin: 0 2px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .highlight {
+        max-width: 90%;
+    }
+}
+
+
+/* Styling for the 3 day activity */
+.travel-days {
+    font-family: 'Poppins', sans-serif;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Styling for headings */
+.package-h2 {
+    color: #000000;
+}
+
+.package-h3 {
+    color: #000000;
+    margin-top: 20px;
+}
+
+/* Styling for ordered and unordered lists */
+.package-schedule {
+    padding-left: 20px;
+}
+
+/* Styling for the activity container */
+.activity-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px auto;
+}
+
+/* Styling for each day's activity */
+.day-activity {
+    margin: 10px;
+    max-width: 33%;
+}
+
+/* Styling for the gallery image */
+.gallery-package img {
+    width: 100%;
+    height: 160px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the description */
+.desc-package {
+    text-align: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    color: #444;
+    font-size: 14px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .travel-days {
+        padding: 20px;
+    }
+
+    .day-activity {
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .activity-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 600px) {
+    .day-activity {
+        width: 90%;
+    }
+}
+
+.clearfix-package:after {
+    content: "";
+    clear: both;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#banner-text {
+    animation: slideInFromLeft 3s ease;
+}
+
+.banner_container {
+    overflow: hidden;
+}
+
+#tagline {
+    text-align: center;
+}

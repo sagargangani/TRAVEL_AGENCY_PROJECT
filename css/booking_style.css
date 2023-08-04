@@ -1,324 +1,352 @@
-.banner-image {
-    position: relative;
-    background-image: url('../img/bg2.png');
-    height: 600px;
-    background-position: top;
-    background-size: cover;
-}
+ /* Author : Het Pandya C0892917 */
+ /* Date : 4th Aug, 2023 at 11:00 am */
 
-.overlay {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 99;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
+ /*sets banner image */
+ .banner-image {
+     position: relative;
+     background-image: url('../img/bg2.png');
+     height: 600px;
+     background-position: top;
+     background-size: cover;
+ }
 
-.booking main {
-    background-color: white;
+ /*put overlay for banner image */
+ .overlay {
+     position: absolute;
+     background: rgba(0, 0, 0, 0.4);
+     z-index: 99;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+ }
 
-    height: 100%;
-    padding-top: 2%;
+ /* sets background-color,height,padding-top for main section */
+ .booking main {
+     background-color: white;
 
-}
+     height: 100%;
+     padding-top: 2%;
 
-* {
-    box-sizing: border-box;
+ }
 
-}
+ /* sets box-sizing for the booking page */
+ * {
+     box-sizing: border-box;
 
-.col-75 input[type=text],
-.col-75 input[type=date],
-.col-75 input[type=email],
-.col-75 select,
-#countrycode {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border: 1px solid #e9ecf4;
-    outline: none;
-    border-radius: 4px;
-    resize: vertical;
-    transition: border-bottom 0.5s ease-in-out;
+ }
 
-}
+ /* sets style for all the inputs in booking form */
+ .col-75 input[type=text],
+ .col-75 input[type=date],
+ .col-75 input[type=email],
+ .col-75 select,
+ #countrycode {
+     width: 100%;
+     padding: 12px;
+     border: none;
+     border: 1px solid #e9ecf4;
+     outline: none;
+     border-radius: 4px;
+     resize: vertical;
+     transition: border-bottom 0.5s ease-in-out;
 
-.col-75 input[type=text]:focus,
-.col-75 input[type=email]:focus {
-    border-bottom: 3px solid rgb(76, 76, 255);
-}
+ }
 
-.col-75 input[type=text]::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgb(76, 76, 255);
-    /* Change to your desired border color */
-    transition: width 0.5s ease-in-out;
-}
+ /* sets an transition effect on focus in all inputs of booking form */
+ .col-75 input[type=text]:focus,
+ .col-75 input[type=email]:focus {
+     border-bottom: 3px solid rgb(76, 76, 255);
+ }
 
-.col-75 input[type=text]:focus::after {
-    width: 100%;
-}
+ /* sets an transition effect on focus in all inputs of booking form */
+ .col-75 input[type=text]::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 2px;
+     background-color: rgb(76, 76, 255);
+     transition: width 0.5s ease-in-out;
+ }
 
+ .col-75 input[type=text]:focus::after {
+     width: 100%;
+ }
 
-.package_info hr,
-.frm_container form hr {
-    background-color: rgb(76, 76, 255);
-    height: 0.5px;
-    border: none;
-}
-
-
-
-
-#dob,
-#city,
-#country {
-    width: 70%;
-    margin-left: 33%;
-}
-
-#state,
-#zip_code {
-    width: 70%;
-    margin-left: 30%;
-}
-
-#countrycode {
-    width: 100%;
-    margin-left: 80%;
-    margin-top: -6%;
-}
-
-#ph_number {
-    width: 100%;
-    margin-left: 50%;
-    margin-top: -3%;
-}
-
-#lb_ph_number,
-#lb_state,
-#lb_zip_code {
-    padding-left: 5%;
-    position: absolute;
-}
+ /* style for hr lines in the page */
+ .package_info hr,
+ .frm_container form hr {
+     background-color: rgb(76, 76, 255);
+     height: 0.5px;
+     border: none;
+ }
 
 
-label {
-    padding: 12px 12px 12px 0;
-    display: block;
-}
 
-.frm_container .row input[type=submit] {
-    background-color: #fff;
-    color: rgb(76, 76, 255);
-    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
-    border: 1px solid rgb(76, 76, 255);
-    padding: 12px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    font-size: 1.0em;
-    margin-bottom: 2%;
-}
+ /* sets width and margin for date, city and country input */
+ #dob,
+ #city,
+ #country {
+     width: 70%;
+     margin-left: 33%;
+ }
 
-.add_button {
+ /* sets width and margin for state, zip_code input */
+ #state,
+ #zip_code {
+     width: 70%;
+     margin-left: 30%;
+ }
 
-    background-color: #fff;
-    color: rgb(76, 76, 255);
-    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
-    padding: 12px 20px;
-    border: 1px solid rgb(76, 76, 255);
-    border-radius: 4px;
-    cursor: pointer;
-    float: left;
-}
+ /* sets width and margin for countrycode input */
+ #countrycode {
+     width: 100%;
+     margin-left: 80%;
+     margin-top: -6%;
+ }
 
-.frm_container .row input[type=submit]:hover,
-.add_button:hover {
-    background-color: rgb(76, 76, 255);
-    color: #fff;
-    border: 2px solid rgb(76, 76, 255);
-    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
-}
 
-.booking .package_info {
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
-    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
-    margin-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 3%;
-    /*  background-color: rgb(242, 242, 254, .7); */
-    border-radius: 10px;
-    box-sizing: border-box;
+ /* sets width and margin for phone_number input */
+ #ph_number {
+     width: 100%;
+     margin-left: 50%;
+     margin-top: -3%;
+ }
 
-}
+ /* common css style for all labels */
+ label {
+     padding: 12px 12px 12px 0;
+     display: block;
+ }
 
-/* Styling for headings */
-.booking .package_info .row h1 {
-    color: rgb(76, 76, 255);
-    padding: 2%;
-}
+ /* css for labels of phone_number,state,zip_code */
+ #lb_ph_number,
+ #lb_state,
+ #lb_zip_code {
+     padding-left: 5%;
+     position: absolute;
+ }
 
-.booking .package_info .row .col-50 h3 {
-    color: rgb(76, 76, 255);
-    margin-top: 20px;
-}
 
-/* Styling for ordered and unordered lists */
-.booking .package_info .row .col-50 ul,
-.booking .package_info .row .col-50 ol {
-    padding-left: 20px;
-    font-style: italic;
-}
+ /* css style for input type submit */
+ .frm_container .row input[type=submit] {
+     background-color: #fff;
+     color: rgb(76, 76, 255);
+     box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+     border: 1px solid rgb(76, 76, 255);
+     padding: 12px 20px;
+     border-radius: 4px;
+     cursor: pointer;
+     float: right;
+     font-size: 1.0em;
+     margin-bottom: 2%;
+ }
 
-.booking .package_info .row .col-50 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 2%;
-    box-shadow: 0px 5px 30px 0px rgba(69, 78, 95, 0.57);
-}
+ /* css style for input type button (for Add traveler button) */
+ .add_button {
 
-.frm_container {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 10%;
+     background-color: #fff;
+     color: rgb(76, 76, 255);
+     box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+     padding: 12px 20px;
+     border: 1px solid rgb(76, 76, 255);
+     border-radius: 4px;
+     cursor: pointer;
+     float: left;
+ }
 
-}
+ /* sets hover effect for add traveler button and submit button */
+ .frm_container .row input[type=submit]:hover,
+ .add_button:hover {
+     background-color: rgb(76, 76, 255);
+     color: #fff;
+     border: 2px solid rgb(76, 76, 255);
+     box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+ }
 
-.frm_container form {
-    box-sizing: border-box;
-    box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
-    /* background-color: rgb(242, 242, 254, .7); */
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 1%;
+ /* sets style for package_info class in the page */
+ .booking .package_info {
+     margin-top: 3%;
+     margin-left: 10%;
+     margin-right: 10%;
+     box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+     margin-bottom: 2%;
+     padding-left: 5%;
+     padding-right: 5%;
+     padding-bottom: 3%;
+     border-radius: 10px;
+     box-sizing: border-box;
 
-}
+ }
 
-.frm_container h1 {
+ /* Styling for heading of package_info class */
+ .booking .package_info .row h1 {
+     color: rgb(76, 76, 255);
+     padding: 2%;
+ }
 
-    padding: 2%;
-    color: rgb(76, 76, 255);
+ /* Styling for details of package_info class */
+ .booking .package_info .row .col-50 h3 {
+     color: rgb(76, 76, 255);
+     margin-top: 20px;
+ }
 
-}
+ /* Styling for ordered and unordered lists */
+ .booking .package_info .row .col-50 ul,
+ .booking .package_info .row .col-50 ol {
+     padding-left: 20px;
+     font-style: italic;
+ }
 
-.frm_container h2 {
-    color: rgb(76, 76, 255);
-}
+ /* css for image in package */
+ .booking .package_info .row .col-50 img {
+     width: 100%;
+     height: 100%;
+     border-radius: 2%;
+     box-shadow: 0px 5px 30px 0px rgba(69, 78, 95, 0.57);
+ }
 
-#traveler_info_heading {
-    background-color: rgb(76, 76, 255);
-    color: #fff;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 2%;
-    margin-bottom: 2%;
+ /* margin and padding for frm_container */
+ .frm_container {
+     margin-left: 10%;
+     margin-right: 10%;
+     padding-bottom: 10%;
 
-}
+ }
 
-#down-icon {
-    float: right;
-    position: relative;
-    margin-top: -4.75%;
-    margin-right: 1.5%;
-    font-size: 25px;
-    color: #fff;
-}
+ /* css for form of frm_container */
+ .frm_container form {
+     box-sizing: border-box;
+     box-shadow: 0px 5px 30px 0px rgba(214, 215, 216, 0.57);
+     /* background-color: rgb(242, 242, 254, .7); */
+     padding-left: 5%;
+     padding-right: 5%;
+     border-radius: 1%;
 
-.col-50 {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-}
+ }
 
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
+ /* css for form header */
+ .frm_container h1 {
 
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
+     padding: 2%;
+     color: rgb(76, 76, 255);
 
-/* Clear floats after the columns */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+ }
 
-/* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
+ /* css for sub header for form */
+ .frm_container h2 {
+     color: rgb(76, 76, 255);
+ }
 
-    .col-25,
-    .col-50,
-    .col-75,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
+ /* css for traveler personal details section */
+ #traveler_info_heading {
+     background-color: rgb(76, 76, 255);
+     color: #fff;
+     border-radius: 10px;
+     padding: 5px;
+     margin-top: 2%;
+     margin-bottom: 2%;
 
-    input[type=text] {
-        margin: 1%;
-    }
+ }
 
-    #dob,
-    #traveler_info_heading,
-    #ph_number,
-    #countrycode,
-    #city,
-    #country,
-    #zip_code,
-    /* #lb_zip_code, */
-    #state,
-    #lb_ph_number {
+ /* css for down arrow icon in traveler_info_heading */
+ #down-icon {
+     float: right;
+     position: relative;
+     margin-top: -4.75%;
+     margin-right: 1.5%;
+     font-size: 25px;
+     color: #fff;
+ }
 
-        margin-left: 0%;
-        position: relative;
-        width: 100%;
-    }
+ /* css for col-50 class */
+ .col-50 {
+     float: left;
+     width: 50%;
+     margin-top: 6px;
+ }
 
-    #lb_zip_code,
-    #lb_state {
-        margin-left: -5%;
-        position: relative;
-        width: 100%;
-    }
+ /* css for col-25 class */
+ .col-25 {
+     float: left;
+     width: 25%;
+     margin-top: 6px;
+ }
 
-    #dob {
-        width: 80%;
-        margin-left: 0%;
-    }
+ /* css for col-75 class */
+ .col-75 {
+     float: left;
+     width: 75%;
+     margin-top: 6px;
+ }
 
-    #countrycode {
-        margin-left: -4%;
-        margin-top: 1%;
-        width: 100%;
-    }
+ /* Clear floats after the columns */
+ .row::after {
+     content: "";
+     display: table;
+     clear: both;
+ }
 
-    #ph_number {
-        margin-left: -4%;
-        margin-top: 1%;
-        width: 100%;
-        padding-right: 0;
+ /* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 768px) {
 
-    }
+     .col-25,
+     .col-50,
+     .col-75,
+     input[type=submit] {
+         width: 100%;
+         margin-top: 0;
+     }
 
-    #down-icon {
-        margin-top: -40px;
-        margin-right: 2%;
-    }
-}
+     input[type=text] {
+         margin: 1%;
+     }
+
+     #dob,
+     #traveler_info_heading,
+     #ph_number,
+     #countrycode,
+     #city,
+     #country,
+     #zip_code,
+     #state,
+     #lb_ph_number {
+
+         margin-left: 0%;
+         position: relative;
+         width: 100%;
+     }
+
+     #lb_zip_code,
+     #lb_state {
+         margin-left: -5%;
+         position: relative;
+         width: 100%;
+     }
+
+     #dob {
+         width: 80%;
+         margin-left: 0%;
+     }
+
+     #countrycode {
+         margin-left: -4%;
+         margin-top: 1%;
+         width: 100%;
+     }
+
+     #ph_number {
+         margin-left: -4%;
+         margin-top: 1%;
+         width: 100%;
+         padding-right: 0;
+
+     }
+
+     #down-icon {
+         margin-top: -40px;
+         margin-right: 2%;
+     }
+ }
