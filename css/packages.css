@@ -6,7 +6,7 @@ Sagar Gangani(c0894464) */
 .banner-image {
     position: relative;
     background-image: url('../img/package_banner.jpg');
-    height: 600px;
+    height: 400px;
     background-position: center;
     background-size: cover;
 }
@@ -21,6 +21,7 @@ Sagar Gangani(c0894464) */
 .package_container hr {
     background-color: rgb(76, 76, 255);
     height: 0.5px;
+    margin-bottom: 3vh;
     border: none;
 }
 
@@ -196,9 +197,11 @@ header h2 {
 
     .article header {
         /* overflow: hidden; */
-        padding-bottom: 23vh;
-        margin-bottom: 6vh;
+        /* padding-bottom: 23vh; */
+        margin: 0 !important;
+        margin-bottom: 2vh;
     }
+
 
     .article_content {
         width: 100%;
@@ -250,6 +253,8 @@ header h2 {
     .article header {
         display: flex;
         justify-content: center;
+        margin: 0;
+        margin-left: 2vh;
     }
 
     .article_part {
