@@ -1,3 +1,5 @@
+/* Author: Swatiben Pawar (C0893717), Date: 4th Aug, 2023 at 05:22pm */
+/* Banner image */
 #contact-page .banner-image {
     position: relative;
     background-image: url('../img/contact_us_banner.jpg');
@@ -16,6 +18,7 @@
     height: 100%;
 }
 
+/* row and column wrappers */
 #contact-page .row {
     justify-content: space-between;
 }
@@ -36,6 +39,8 @@
     margin-top: 2%;
     margin-bottom: 1%;
 }
+
+/* form container css */
 
 #contact-page .form-container {
     margin: 3rem 0;
@@ -91,6 +96,7 @@
     color: #fff;
 }
 
+/* contact us options css */
 #contact-page .module.icon-card {
     position: relative;
     padding-left: 40px;
@@ -120,6 +126,7 @@
     text-decoration: none;
 }
 
+/* Media query for tablet */
 @media screen and (max-width: 900px) {
 
     #contact-page .column-8 {
@@ -165,6 +172,7 @@
     }
 }
 
+/* media query for width less than 600px */
 @media screen and (max-width: 600px) {
 
     #contact-page .column-4 {
@@ -181,6 +189,7 @@
     }
 }
 
+/* media query for width less than 500px */
 @media screen and (max-width: 500px) {
     #contact-page .form-container {
         padding: 10px;
