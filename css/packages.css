@@ -1,6 +1,8 @@
 /* Authors: Het Pandya(c0892917),
 Sagar Gangani(c0894464) */
 
+
+/*sets banner image */
 .banner-image {
     position: relative;
     background-image: url('../img/package_banner.jpg');
@@ -9,29 +11,34 @@ Sagar Gangani(c0894464) */
     background-size: cover;
 }
 
+/* sets margin in package_container */
 .package_container {
     margin-left: 10%;
     margin-right: 10%;
 }
 
+/* sets style for line in pacakge_container */
 .package_container hr {
     background-color: rgb(76, 76, 255);
     height: 0.5px;
     border: none;
 }
 
+/* sets style for h1 heading of pacakge_container */
 .package_container h1 {
     text-align: center;
     color: rgb(76, 76, 255);
     padding: 2%;
 }
 
+/* css for article_part */
 .article_part {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* css for article_content */
 .article_content {
     display: inline-block;
     width: 60%;
@@ -41,14 +48,17 @@ Sagar Gangani(c0894464) */
     font-style: italic;
 }
 
+/* css for article header. */
 .article header h2 {
     margin-bottom: 2vh;
 }
 
+/* css for article */
 .article header {
     margin: 5vh 5vh 1vh 5vh;
 }
 
+/* css for continue reading text */
 .continue_reading {
     margin-top: 4vh;
     display: flex;
@@ -57,25 +67,31 @@ Sagar Gangani(c0894464) */
     font-style: normal;
 }
 
+/* hover effect for continue reading text */
 .continue_reading a:hover {
     color: black;
 }
 
+/* css for anchor tage in continue reading text */
 .continue_reading a {
     color: blue;
     text-decoration: none;
 }
 
+/* css for h2 tag */
 header h2 {
     /* margin: 3vh 0 3vh 8vw; */
     font-size: 5vh;
 }
 
+/* css for article image */
 .article_img img {
     width: 22vw;
     height: 45vh;
     border-radius: 2vh;
 }
+
+/* css for article class */
 
 .article {
     font-family: 'DM Sans', sans-serif;
@@ -90,24 +106,31 @@ header h2 {
 
 }
 
+/* css for article header */
+
 .article header h2 {
     padding-top: 4vh;
 }
+
+/* css for container class */
 
 .container {
     max-width: 1170px;
     margin: auto;
 }
 
+/* css for row class */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* css for cover image */
 .img_cover {
     margin-bottom: 2vh;
 }
 
+/* media query for desktop */
 @media screen and (max-width:1350px) {
     .article_content {
         margin-top: 0;
@@ -122,7 +145,7 @@ header h2 {
     }
 }
 
-
+/* media query for mobile */
 @media screen and (max-width: 480px) {
     .header {
         display: block;
@@ -188,6 +211,7 @@ header h2 {
     }
 }
 
+/* media query for tablet */
 @media only screen and (max-width: 768px) {
     .header {
         display: block;
