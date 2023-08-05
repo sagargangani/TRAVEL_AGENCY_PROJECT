@@ -1,3 +1,8 @@
+/* Authors: Avan Panchal (C0895319),
+Swatiben Pawar(c0893717),
+Het Pandya(c0892917),
+Sagar Gangani(c0894464),
+Jayti Patel(c0895313) */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap');
 
 * {
@@ -644,8 +649,8 @@ body {
 }
 
 /* responsive style for content of slider*/
-@media only screen and (max-width: 620px){
-    .content p{
+@media only screen and (max-width: 620px) {
+    .content p {
         font-size: 16px;
         padding: 5px 5px;
     }
@@ -659,13 +664,13 @@ body {
     }
 }
 
-@media only screen and (max-width: 470px){
-    .content p{
+@media only screen and (max-width: 470px) {
+    .content p {
         font-size: 14px;
         padding: 5px 5px;
     }
 
-    .content h2{
+    .content h2 {
         font-size: 12px;
     }
 
