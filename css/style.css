@@ -572,7 +572,7 @@ body {
     /* margin: 67px 0 0; */
 }
 
-.mainSlider {
+.Slider {
     position: absolute;
     top: 70px;
     left: 0;
@@ -605,7 +605,7 @@ body {
 .content p {
     font-size: 20px;
     /* font-family: 'comic sans ms', sans-serif; */
-    line-height: 1.7;
+    line-height: 1.5;
     color: #000;
     margin-top: -20px;
     margin-bottom: 20px;
@@ -643,9 +643,9 @@ body {
     border-radius: 50%;
 }
 
-/* responsive style for content*/
-@media only screen and (max-width: 400px) {
-    .content p {
+/* responsive style for content of slider*/
+@media only screen and (max-width: 620px){
+    .content p{
         font-size: 16px;
         padding: 5px 5px;
     }
@@ -654,40 +654,55 @@ body {
         font-size: 12px;
     }
 
-    .mainSlider {
+    .Slider {
         top: 50px;
     }
 }
 
-.dots:checked:nth-of-type(1)~.mainSlider {
+@media only screen and (max-width: 470px){
+    .content p{
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+
+    .content h2{
+        font-size: 12px;
+    }
+
+    .Slider {
+        top: 30px;
+    }
+}
+
+.dots:checked:nth-of-type(1)~.Slider {
     left: 0%;
 }
 
-.dots:checked:nth-of-type(2)~.mainSlider {
+.dots:checked:nth-of-type(2)~.Slider {
     left: -100%;
 }
 
-.dots:checked:nth-of-type(3)~.mainSlider {
+.dots:checked:nth-of-type(3)~.Slider {
     left: -200%;
 }
 
-.dots:checked:nth-of-type(4)~.mainSlider {
+.dots:checked:nth-of-type(4)~.Slider {
     left: -300%;
 }
 
-.dots:checked:nth-of-type(5)~.mainSlider {
+.dots:checked:nth-of-type(5)~.Slider {
     left: -400%;
 }
 
 /* responsive images for recent trips */
-div.recent_trip {
+.recent_trip {
     /* font-family: 'comic sans ms', sans-serif; */
     text-align: center;
     color: black;
-    padding-top: 150px;
+    padding-top: 55px;
 }
 
-div.gallery {
+.gallery {
     border-radius: 2vh;
 }
 
@@ -695,13 +710,13 @@ div.gallery {
     border: 1px solid rgb(76, 76, 255);
 }
 
-div.gallery img {
+.gallery img {
     width: 100%;
     height: auto;
     border-radius: 2vh;
 }
 
-div.desc {
+.desc {
     padding: 15px;
     text-align: center;
     /* font-family: 'comic sans ms', sans-serif; */
