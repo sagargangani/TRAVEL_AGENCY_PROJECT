@@ -95,14 +95,14 @@ nav ul li button {
 .article_part {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .article_content {
     display: inline-block;
     width: 60%;
     font-size: 3vh;
-    margin-top: 4vh;
+    /* margin-top: 4vh; */
     margin-left: 2vw;
     font-style: italic;
 }
@@ -119,7 +119,7 @@ nav ul li button {
     margin-top: 4vh;
     display: flex;
     justify-content: center;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     font-style: normal;
 }
 
