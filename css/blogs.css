@@ -92,7 +92,7 @@ header h2 {
 @media screen and (max-width: 480px) {
     .header {
         display: block;
-        height: 25vh;
+        height: 5vh;
     }
 
     header h2 {
@@ -139,7 +139,7 @@ header h2 {
 
     .article header {
         /* overflow: hidden; */
-        padding-bottom: 23vh;
+        /* padding-bottom: 23vh; */
         margin-bottom: 6vh;
     }
 
