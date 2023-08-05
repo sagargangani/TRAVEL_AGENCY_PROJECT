@@ -1,4 +1,6 @@
 /* Author: Sagar Gangani (c0894464) */
+
+/* styling the banner image by adding it in background */
 .banner-image {
     position: relative;
     background-image: url('../img/blog.jpeg');
@@ -7,12 +9,14 @@
     background-size: cover;
 }
 
+/* styling the inner of flex box  */
 .article_part {
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
 
+/* Styling article content */
 .article_content {
     display: inline-block;
     width: 60%;
@@ -22,14 +26,17 @@
     font-style: italic;
 }
 
+/* Styling the header by adding margin bottom */
 .article header h2 {
     margin-bottom: 2vh;
 }
 
+/* Styling the header by adding margin */
 .article header {
     margin: 5vh;
 }
 
+/* Styling the continue reading button */
 .continue_reading {
     margin-top: 4vh;
     display: flex;
@@ -38,26 +45,31 @@
     font-style: normal;
 }
 
+/* adding hover effect to anchor tag */
 .continue_reading a:hover {
     color: black;
 }
 
+/* adding color to achor tag */
 .continue_reading a {
     color: blue;
     text-decoration: none;
 }
 
+/* styling the header*/
 header h2 {
     /* margin: 3vh 0 3vh 8vw; */
     font-size: 5vh;
 }
 
+/* styling the image */
 .article_img img {
     width: 22vw;
     height: 45vh;
     border-radius: 2vh;
 }
 
+/* styling article */
 .article {
     font-family: 'DM Sans', sans-serif;
     margin: auto;
@@ -71,25 +83,29 @@ header h2 {
 
 }
 
+/* styling article header */
 .article header h2 {
     padding-top: 4vh;
 }
 
+/* styling container */
 .container {
     max-width: 1170px;
     margin: auto;
 }
 
+/* styling row */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* adding margin to img cover */
 .img_cover {
     margin-bottom: 2vh;
 }
 
-
+/* media queires for responsive design */
 @media screen and (max-width: 480px) {
     .header {
         display: block;
